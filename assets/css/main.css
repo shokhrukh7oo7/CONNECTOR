@@ -1,0 +1,86 @@
+/* FONTS START */
+@font-face {
+  font-family: "Suisse";
+  src: url("/assets/fonts/fonnts.com-Suisse_Intl_Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisse";
+  src: url("/assets/fonts/fonnts.com-Suisse_Intl_Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisse";
+  src: url("/assets/fonts/fonnts.com-Suisse_Intl_Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+/* FONTS END */
+
+/* LAYOUT START */
+:root {
+  --green-color: #026765;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --grey-color: #757575;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Suisse", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+::placeholder {
+  color: unset;
+}
+/* LAYOUT END */
