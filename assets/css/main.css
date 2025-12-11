@@ -27,6 +27,7 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --grey-color: #757575;
+  --light-grey: #eceff1;
   --box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   --btn-padding: 12px 16px;
 }
@@ -56,9 +57,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 a {
@@ -95,6 +96,7 @@ p {
   background-repeat: no-repeat;
   height: clamp(375px, 50vw, 528px);
   box-shadow: var(--box-shadow);
+  position: relative;
 }
 .home-banner-wrapper .container {
   display: flex;
@@ -132,6 +134,105 @@ p {
   padding: var(--btn-padding);
   background-color: var(--white-color);
 }
+/* ======================================= */
+.additional-section-wrapper {
+  background-color: var(--light-grey);
+  padding: 64px 0;
+}
 
+.additional-section-wrapper
+  .additional-section-content
+  .additional-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.additional-section-wrapper
+  .additional-section-content
+  .additional-top-wrapper
+  .additional-top-left-wrapper {
+  width: 80%;
+}
+
+.additional-section-wrapper
+  .additional-section-content
+  .additional-top-wrapper
+  .additional-top-right-wrapper {
+  width: 20%;
+  text-align: center;
+}
+
+.additional-section-wrapper
+  .additional-section-content
+  .additional-top-wrapper
+  .additional-top-left-wrapper
+  ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.additional-section-wrapper
+  .additional-section-content
+  .additional-top-wrapper
+  .additional-top-left-wrapper
+  ul
+  li
+  img {
+  width: 18px;
+  height: 18px;
+}
+.additional-section-wrapper
+  .additional-section-content
+  .additional-top-wrapper
+  .additional-top-left-wrapper
+  ul
+  li {
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 400;
+  color: var(--black-color);
+  border-radius: 52px;
+  border: 1px solid var(--black-color);
+  display: inline-block;
+  padding: 9px 12px;
+}
+
+.additional-section-wrapper
+  .additional-section-content
+  .additional-top-wrapper
+  .additional-top-right-wrapper
+  h2 {
+  font-size: clamp(32px, 6vw, 64px);
+  font-weight: 700;
+  line-height: 100%;
+}
+.additional-section-wrapper
+  .additional-section-content
+  .additional-top-wrapper
+  .additional-top-right-wrapper
+  p {
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--black-color);
+}
+
+.additional-section-wrapper
+  .additional-section-content
+  .additional-bottom-wrapper {
+  margin-top: 24px;
+}
+
+.additional-section-wrapper
+  .additional-section-content
+  .additional-bottom-wrapper
+  p {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0;
+}
 /* ======================================= */
 /* MAIN END */
