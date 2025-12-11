@@ -93,8 +93,14 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 528px;
+  height: clamp(375px, 50vw, 528px);
   box-shadow: var(--box-shadow);
+}
+.home-banner-wrapper .container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
 }
 .home-banner-wrapper .banner-content {
   width: 100%;
@@ -103,7 +109,7 @@ p {
   flex-direction: column;
   align-items: start;
   gap: clamp(10px, 1vw, 16px);
-  padding: 190px 0;
+  /* padding: 190px 0; */
 }
 .home-banner-wrapper .banner-content h1 {
   font-size: clamp(20px, 3vw, 48px);
