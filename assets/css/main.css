@@ -27,6 +27,8 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --grey-color: #757575;
+  --box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  --btn-padding: 12px 16px;
 }
 
 * {
@@ -56,7 +58,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
 }
 
 a {
@@ -84,3 +86,46 @@ p {
   color: unset;
 }
 /* LAYOUT END */
+
+/* MAIN START */
+/* ======================================= */
+.home-banner-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 528px;
+  box-shadow: var(--box-shadow);
+}
+.home-banner-wrapper .banner-content {
+  width: 100%;
+  max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: clamp(10px, 1vw, 16px);
+  padding: 190px 0;
+}
+.home-banner-wrapper .banner-content h1 {
+  font-size: clamp(20px, 3vw, 48px);
+  font-weight: 700;
+  color: var(--white-color);
+  line-height: 100%;
+  margin: 0;
+}
+.home-banner-wrapper .banner-content p {
+  font-size: clamp(15px, 1.5vw, 20px);
+  font-weight: 500;
+  color: var(--white-color);
+  line-height: 100%;
+}
+.home-banner-wrapper .banner-content a {
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 400;
+  color: var(--black-color);
+  border-radius: 52px;
+  padding: var(--btn-padding);
+  background-color: var(--white-color);
+}
+
+/* ======================================= */
+/* MAIN END */
