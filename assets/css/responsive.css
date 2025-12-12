@@ -67,6 +67,18 @@
     align-items: center;
     text-align: center;
   }
+  .banner-equipment-content-wrapper {
+    max-width: 600px;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .banner-equipment-content-wrapper .banner-equipment-header {
+    align-items: center;
+  }
+  .banner-equipment-content-wrapper .btn-wrapper {
+    justify-content: center;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {
@@ -81,6 +93,9 @@
 @media (max-width: 576px) {
   .directions-wrapper .directions-content-wrapper {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .banner-equipment-content-wrapper .btn-wrapper {
+    flex-direction: column;
   }
 }
 /* Breakpoint 425px */

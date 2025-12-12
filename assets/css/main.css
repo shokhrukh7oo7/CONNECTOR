@@ -445,7 +445,88 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: clamp(375px, 50vw, 943px);
+  /* height: clamp(375px, 50vw, 650px); */
+  display: flex;
+  padding: clamp(30px, 5vw, 60px) 0;
+}
+.banner-equipment-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  gap: clamp(20px, 9vw, 91px);
+  height: 100%;
+}
+.banner-equipment-content-wrapper .banner-equipment-header {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: clamp(10px, 1vw, 15px);
+}
+.banner-equipment-content-wrapper .banner-equipment-header img {
+  width: 100%;
+  max-width: clamp(150px, 20vw, 279px);
+}
+.banner-equipment-content-wrapper .banner-equipment-header p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+.banner-equipment-content-wrapper .banner-equipment-body h1 {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: clamp(10px, 1vw, 15px);
+}
+.banner-equipment-content-wrapper .banner-equipment-body p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+.banner-equipment-content-wrapper .btn-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  flex-direction: row;
+  margin-top: clamp(20px, 2vw, 32px);
+}
+.banner-equipment-content-wrapper .btn-wrapper .btn-first {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 16px;
+  border-radius: 52px;
+  transition: all 0.3s ease-in-out;
+}
+.banner-equipment-content-wrapper .btn-wrapper .btn-first:hover {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.banner-equipment-content-wrapper .btn-wrapper .btn-second {
+  background-color: var(--grey-color);
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 52px;
+  transition: all 0.3s ease-in-out;
+}
+.banner-equipment-content-wrapper .btn-wrapper .btn-second:hover {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+.banner-equipment-content-wrapper .btn-wrapper img {
+  width: 20px;
+  filter: brightness(0) invert(1);
 }
 /* ======================================= */
 /* MAIN END */
