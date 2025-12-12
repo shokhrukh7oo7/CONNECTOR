@@ -51,9 +51,20 @@
     p {
     text-align: center;
   }
+  .service-wrapper .service-content-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-wrapper .service-header-wrapper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {
+  .service-wrapper .service-content-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* Breakpoint 576px */
 @media (max-width: 576px) {
