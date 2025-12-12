@@ -296,7 +296,7 @@ p {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: -40px;
+  top: -55px;
   right: -20px;
 }
 .service-wrapper .service-content-wrapper .item .icon-wrapper {
@@ -440,6 +440,12 @@ p {
 .directions-wrapper .directions-content-wrapper .item .btn-wrapper img {
   width: 20px;
 }
-
+/* ======================================= */
+.banner-equipment {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: clamp(375px, 50vw, 943px);
+}
 /* ======================================= */
 /* MAIN END */
