@@ -109,6 +109,22 @@
   .card-section-wrapper .card-item .card-image {
     width: auto;
   }
+  .tariffs-wrapper .tariffs-header-wrapper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .tariffs-wrapper .tariffs-card-wrapper .tariffs-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .tariffs-wrapper .tariffs-card-wrapper .tariffs-item-wrapper ul {
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {
