@@ -98,6 +98,14 @@
     justify-content: center;
     align-items: center;
   }
+  .solution-wrapper .solution-content {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .solution-wrapper .year-counter {
+    display: none;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {
