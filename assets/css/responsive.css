@@ -1,6 +1,14 @@
 /* Breakpoint 1200px */
 @media (max-width: 1200px) {
 }
+
+/* Breakpoint 1100px */
+@media (max-width: 1100px) {
+  .industry {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
 /* Breakpoint 992px */
 @media (max-width: 992px) {
   .home-banner-wrapper .container {
@@ -78,6 +86,17 @@
   }
   .banner-equipment-content-wrapper .btn-wrapper {
     justify-content: center;
+  }
+  .industry .left-industry-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .industry .right-industry-wrapper ul {
+    justify-content: center;
+    align-items: center;
   }
 }
 /* Breakpoint 768px */
