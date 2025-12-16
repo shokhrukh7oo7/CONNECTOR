@@ -267,9 +267,12 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: clamp(375px, 40vw, 528px);
+  /* height: clamp(375px, 40vw, 528px); */
   box-shadow: var(--box-shadow);
   position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 520 auto;
 }
 
 .home-banner-wrapper .container {
@@ -283,7 +286,8 @@ p {
   max-width: 630px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  /* justify-content: end; */
+  justify-content: center;
   align-items: start;
   gap: clamp(10px, 1vw, 16px);
   height: 100%;

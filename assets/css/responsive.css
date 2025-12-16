@@ -1,5 +1,15 @@
+/* Breakpoint 1600px */
+@media (max-width: 1640px) {
+  .home-banner-wrapper .banner-content {
+    justify-content: end;
+  }
+}
+
 /* Breakpoint 1200px */
 @media (max-width: 1400px) {
+  .home-banner-wrapper .banner-content {
+    justify-content: end;
+  }
   .footer-banner-wrapper .banner-hand {
     width: 400px;
   }
