@@ -1064,4 +1064,100 @@ p {
 }
 
 /* ======================================= */
+.footer-banner .container {
+  position: relative;
+} 
+.footer-banner-wrapper {
+  /* background: #70d3fa; */
+  background: linear-gradient(
+    90deg,
+    rgba(112, 211, 250, 1) 0%,
+    rgba(194, 188, 105, 1) 100%
+  );
+}
+.footer-banner-wrapper {
+  position: relative;
+    overflow: hidden; /* 🔥 главное */
+  border-radius: 32px;
+}
+
+.footer-banner-wrapper .banner-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  padding: clamp(10px, 7vw, 78px) clamp(20px, 10vw, 100px);
+}
+
+.footer-banner-wrapper .banner-content-wrapper h1 {
+  font-size: clamp(20px, 3vw, 48px);
+  font-weight: 700;
+  width: 100%;
+  max-width: 490px;
+}
+.footer-banner-wrapper .banner-content-wrapper .btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer-banner-wrapper .banner-content-wrapper .btn-wrapper .contact-btn {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 12px 16px;
+  border-radius: 52px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.footer-banner-wrapper .banner-content-wrapper .btn-wrapper .contact-btn:hover {
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+.footer-banner-wrapper .banner-content-wrapper .btn-wrapper .telegram-btn img {
+  width: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.footer-banner-wrapper .banner-content-wrapper .btn-wrapper .telegram-btn {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--black-color);
+  padding: 12px 16px;
+  border-radius: 52px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.footer-banner-wrapper
+  .banner-content-wrapper
+  .btn-wrapper
+  .telegram-btn:hover {
+  background-color: #026765;
+  color: #fff;
+}
+.footer-banner-wrapper
+  .banner-content-wrapper
+  .btn-wrapper
+  .telegram-btn:hover
+  img {
+  filter: brightness(1) invert(1);
+}
+
+.footer-banner-wrapper .banner-hand {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: clamp(370px, 300px, 500px);
+  /* height: 400px; */
+  object-fit: contain;
+
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+/* ======================================= */
 /* MAIN END */
