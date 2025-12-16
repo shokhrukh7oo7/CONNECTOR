@@ -397,7 +397,7 @@ p {
   .additional-top-left-wrapper
   ul
   li {
-  font-size: clamp(12px, 1vw, 14px);
+  font-size: clamp(12px, 1vw, 12px);
   font-weight: 400;
   color: var(--black-color);
   border-radius: 52px;

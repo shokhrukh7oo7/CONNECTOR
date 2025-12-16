@@ -46,3 +46,31 @@ $(document).ready(function () {
     },
   });
 });
+// ================================================
+document.addEventListener('DOMContentLoaded', () => {
+  const counter = document.querySelector('.counter');
+  if (!counter) return;
+
+  const startYear = parseInt(counter.dataset.startYear, 10);
+  const targetValue = new Date().getFullYear() - startYear;
+
+  let started = false;
+
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !started) {
+      started = true;
+      animateCounter(counter, targetValue);
+    }
+  }, { threshold: 0.5 });
+
+  observer.observe(counter);
+});
+
+function animateCounter(el, target) {
+  let current = 0;
+  const interval = setInterval(() => {
+    current++;
+    el.textContent = current;
+    if (current >= target) clearInterval(interval);
+  }, 50);
+}
