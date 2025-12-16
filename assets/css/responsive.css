@@ -249,6 +249,9 @@
   .footer-banner-wrapper .banner-content-wrapper .btn-wrapper {
     flex-direction: column;
   }
+  .partner-wrapper .partner-content-wrapper {
+    justify-content: start;
+  }
 }
 /* Breakpoint 425px */
 @media (max-width: 425px) {
