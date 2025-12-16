@@ -1800,10 +1800,17 @@ p {
 
 /* FOOTERT START */
 .footer-wrapper {
-  background-color: var(--green-color);
+  background: #255050;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 80, 80, 1) 40%,
+    rgba(2, 103, 101, 1) 0%
+  );
   padding: clamp(20px, 5vw, 50px) 0;
 }
-
+.footer-wrapper .footer-right-wrapper {
+  margin-left: 100px;
+}
 .footer-wrapper .footer-left-wrapper {
   display: flex;
   flex-direction: column;
