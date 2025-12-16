@@ -120,7 +120,7 @@ p {
 .header .navbar-wrapper .navbar-menu-wrapper ul li a {
   color: var(--white-color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
 }
 .header .navbar-wrapper .navbar-menu-wrapper ul li a.active {
   border-radius: 50px;
@@ -173,6 +173,39 @@ p {
   backdrop-filter: blur(10px);
   color: var(--white-color);
   border-color: var(--white-color);
+}
+
+.header .mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(10px, 2vw, 30px);
+}
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-btn span {
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+.mobile-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: brightness(1) invert(1);
+  display: none;
 }
 /* HEADER END */
 
