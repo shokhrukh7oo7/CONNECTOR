@@ -237,6 +237,28 @@
     flex-shrink: 0;
   }
   /*  */
+  .footer-wrapper .footer-left-wrapper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-wrapper .footer-right-wrapper {
+    text-align: center;
+  }
+  .footer-wrapper .footer-right-wrapper .useful-links-wrapper {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .footer-wrapper .copyright-wrapper {
+    display: none;
+  }
+  .footer-wrapper .mobile-copyright {
+    display: block;
+    margin-top: 10px;
+  }
+  .footer-wrapper .footer-right-wrapper h2 {
+    margin-top: 25px;
+  }
 }
 /* Breakpoint 576px */
 @media (max-width: 576px) {
