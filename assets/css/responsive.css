@@ -1,7 +1,17 @@
 /* Breakpoint 1200px */
+@media (max-width: 1400px) {
+  .footer-banner-wrapper .banner-hand {
+    width: 400px;
+  }
+  .partner-wrapper .partner-content-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+/* Breakpoint 1200px */
 @media (max-width: 1200px) {
   .footer-banner-wrapper .banner-hand {
-    width: 420px;
+    width: 360px;
   }
 }
 

@@ -1066,7 +1066,7 @@ p {
 /* ======================================= */
 .footer-banner .container {
   position: relative;
-} 
+}
 .footer-banner-wrapper {
   /* background: #70d3fa; */
   background: linear-gradient(
@@ -1077,7 +1077,7 @@ p {
 }
 .footer-banner-wrapper {
   position: relative;
-    overflow: hidden; /* 🔥 главное */
+  overflow: hidden; /* 🔥 главное */
   border-radius: 32px;
 }
 
@@ -1152,12 +1152,68 @@ p {
   right: 0;
   bottom: 0;
 
-  width: clamp(370px, 300px, 500px);
+  width: 500px;
   /* height: 400px; */
   object-fit: contain;
 
   transform: rotate(180deg);
   pointer-events: none;
+}
+/* ======================================= */
+.partner-wrapper {
+  padding: clamp(32px, 6vw, 64px) 0;
+}
+.partner-wrapper .partner-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+}
+.partner-wrapper .partner-header-wrapper a {
+  font-size: clamp(13px, 1vw, 14px);
+  border: 1px solid var(--black-color);
+  color: var(--black-color);
+  border-radius: 52px;
+  padding: 12px 16px;
+  font-weight: 400;
+  line-height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.partner-wrapper .partner-header-wrapper a:hover {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border-color: transparent;
+}
+.partner-wrapper .partner-header-wrapper h3 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: var(--black-color);
+  width: 100%;
+  max-width: 486px;
+  margin: 0;
+}
+.partner-wrapper .partner-header-wrapper p {
+  font-size: clamp(15px, 1vw, 16px);
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--grey-color);
+  width: 100%;
+  max-width: 465px;
+}
+.partner-wrapper .partner-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(10px, 3vw, 35px);
+  margin-top: clamp(20px, 3vw, 40px);
+}
+.partner-wrapper .partner-content-wrapper img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
 /* ======================================= */
 /* MAIN END */
