@@ -151,6 +151,8 @@
     align-items: center;
     text-align: center;
   }
+  /* =================================== */
+  
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {
@@ -195,6 +197,7 @@
     margin: 0;
     flex-shrink: 0;
   }
+  /*  */
 }
 /* Breakpoint 576px */
 @media (max-width: 576px) {
