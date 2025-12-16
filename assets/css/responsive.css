@@ -274,6 +274,9 @@
   .partner-wrapper .partner-content-wrapper {
     justify-content: start;
   }
+  .tariffs-wrapper .tariffs-card-wrapper .tariffs-item-wrapper ul li {
+    display: block;
+  }
 }
 /* Breakpoint 425px */
 @media (max-width: 425px) {
