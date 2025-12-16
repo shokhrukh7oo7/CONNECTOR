@@ -294,7 +294,6 @@ p {
   font-size: clamp(20px, 3vw, 48px);
   font-weight: 700;
   color: var(--white-color);
-  line-height: 100%;
   margin: 0;
 }
 .home-banner-wrapper .banner-content p {
