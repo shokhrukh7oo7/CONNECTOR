@@ -1,19 +1,43 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.querySelector(".burger-btn");
-  const menu = document.querySelector(".mobile-menu");
+const openSearchBtn = document.getElementById("openSearch");
+const searchPanel = document.getElementById("searchPanel");
+const searchOverlay = document.getElementById("searchOverlay");
 
-  if (!burger || !menu) return;
+const burgerBtn = document.querySelector(".burger-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+const mobileClose = document.querySelector(".mobile-close");
 
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-    menu.classList.toggle("active");
-  });
-  const closeBtn = document.querySelector(".mobile-close");
+// открыть бургер
+burgerBtn?.addEventListener("click", () => {
+  mobileMenu.classList.add("active");
+});
 
-  closeBtn.addEventListener("click", () => {
-    menu.classList.remove("active");
-    burger.classList.remove("active");
-  });
+// закрыть бургер
+mobileClose?.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+});
+
+// открыть поиск
+openSearchBtn.addEventListener("click", () => {
+  // если открыт бургер — закрываем его
+  mobileMenu.classList.remove("active");
+
+  searchPanel.classList.add("active");
+  searchOverlay.classList.add("active");
+});
+
+// закрыть поиск
+function closeSearch() {
+  searchPanel.classList.remove("active");
+  searchOverlay.classList.remove("active");
+}
+
+searchOverlay.addEventListener("click", closeSearch);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeSearch();
+    mobileMenu.classList.remove("active");
+  }
 });
 
 // --------------------------------------------
@@ -114,24 +138,4 @@ function animateCounter(el, target) {
     el.textContent = current;
     if (current >= target) clearInterval(interval);
   }, 50);
-}
-// ================================================
-const openBtn = document.getElementById("openSearch");
-const panel = document.getElementById("searchPanel");
-const overlay = document.getElementById("searchOverlay");
-
-openBtn.addEventListener("click", () => {
-  panel.classList.add("active");
-  overlay.classList.add("active");
-});
-
-overlay.addEventListener("click", closeSearch);
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeSearch();
-});
-
-function closeSearch() {
-  panel.classList.remove("active");
-  overlay.classList.remove("active");
 }
