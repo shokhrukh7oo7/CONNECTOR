@@ -286,8 +286,8 @@ p {
   max-width: 630px;
   display: flex;
   flex-direction: column;
-  /* justify-content: end; */
-  justify-content: center;
+  justify-content: end;
+  /* justify-content: center; */
   align-items: start;
   gap: clamp(10px, 1vw, 16px);
   height: 100%;
