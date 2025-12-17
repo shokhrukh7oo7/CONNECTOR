@@ -525,6 +525,9 @@ p {
   right: -20px;
 }
 
+.service-wrapper .service-content-wrapper .item:hover .icon-wrapper {
+  background-color: var(--item-bg);
+}
 .service-wrapper .service-content-wrapper .item:hover {
   box-shadow: rgb(38, 57, 77) 0px 0px 20px -10px;
   background-color: var(--white-color);
