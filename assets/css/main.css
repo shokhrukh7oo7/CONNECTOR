@@ -514,13 +514,33 @@ p {
   border-radius: 32px;
   padding: 24px;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
+
 .service-wrapper .service-content-wrapper .item .ornament {
   width: 150px;
   height: 150px;
   position: absolute;
   top: -55px;
   right: -20px;
+}
+
+.service-wrapper .service-content-wrapper .item:hover {
+  box-shadow: rgb(38, 57, 77) 0px 0px 20px -10px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.service-wrapper .service-content-wrapper .item:hover .ornament {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .service-wrapper .service-content-wrapper .item .icon-wrapper {
   background-color: var(--white-color);
@@ -624,7 +644,8 @@ p {
   transition: all 0.3s ease;
 }
 .directions-wrapper .directions-content-wrapper .item:hover {
-  box-shadow: rgb(38, 57, 77) 0px 10px 20px -10px;
+  /* box-shadow: rgb(38, 57, 77) 0px 10px 20px -10px; */
+  box-shadow: rgb(38, 57, 77) 0px 0px 20px -10px;
   background-color: var(--white-color);
   color: var(--black-color);
 }
@@ -1722,7 +1743,7 @@ p {
 }
 /* ======================================= */
 .partner-wrapper {
-  padding: clamp(32px, 6vw, 64px) 0 clamp(64px, 8vw, 84px);;
+  padding: clamp(32px, 6vw, 64px) 0 clamp(64px, 8vw, 84px);
 }
 .partner-wrapper .partner-header-wrapper {
   display: flex;
