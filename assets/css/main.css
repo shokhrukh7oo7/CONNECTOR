@@ -531,7 +531,7 @@ p {
   color: var(--black-color);
 }
 .service-wrapper .service-content-wrapper .item:hover .ornament {
-  animation: spin 3s linear infinite;
+  animation: spin 10s linear infinite;
 }
 
 @keyframes spin {
