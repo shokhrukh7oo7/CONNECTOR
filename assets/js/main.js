@@ -115,3 +115,23 @@ function animateCounter(el, target) {
     if (current >= target) clearInterval(interval);
   }, 50);
 }
+// ================================================
+const openBtn = document.getElementById("openSearch");
+const panel = document.getElementById("searchPanel");
+const overlay = document.getElementById("searchOverlay");
+
+openBtn.addEventListener("click", () => {
+  panel.classList.add("active");
+  overlay.classList.add("active");
+});
+
+overlay.addEventListener("click", closeSearch);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeSearch();
+});
+
+function closeSearch() {
+  panel.classList.remove("active");
+  overlay.classList.remove("active");
+}

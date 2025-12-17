@@ -261,6 +261,119 @@ p {
 }
 /* HEADER END */
 
+/* SEARCH START */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 98;
+}
+
+/* панель поиска */
+.search-panel {
+  position: fixed;
+  top: 76px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  width: min(600px, 90%);
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+/* активное состояние */
+.search-panel.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.search-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* контент */
+.search-panel h3 {
+  font-weight: 700;
+  color: var(--black-color);
+  font-size: 16px;
+  margin-bottom: clamp(10px, 1vw, 16px);
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  gap: 10px;
+}
+
+.search-form input {
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 9px 16px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.search-form input:focus {
+  border-color: var(--light-green);
+  outline: 0;
+}
+
+.search-form input::placeholder {
+  color: var(--grey-color);
+  font-size: 14px;
+}
+
+.search-form button {
+  background: var(--light-green);
+  border: none;
+  border-radius: 42px;
+  padding: 10px 16px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.search-form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: left 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.search-form button:hover {
+  color: var(--white-color);
+  background-color: var(--light-green);
+
+  box-shadow: rgba(71, 192, 162, 0.45) 0px 10px 30px,
+    rgba(0, 0, 0, 0.12) 0px 6px 12px;
+}
+.search-form button:hover::before {
+  left: 100%;
+}
+/* SEARCH END */
+
 /* MAIN START */
 /* ======================================= */
 .home-banner-wrapper {
@@ -1921,6 +2034,9 @@ p {
   color: #80a5be;
   font-size: 12px;
   font-weight: 400;
+}
+.footer-wrapper .footer-left-wrapper .copyright-wrapper p a {
+  color: var(--light-green);
 }
 .footer-wrapper .footer-right-wrapper h2 {
   font-weight: 700;
