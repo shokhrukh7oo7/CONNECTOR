@@ -308,7 +308,7 @@ p {
 }
 .home-banner-wrapper .banner-content a {
   font-size: clamp(12px, 1vw, 14px);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--black-color);
   border-radius: 52px;
   padding: var(--btn-padding);

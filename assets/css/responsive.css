@@ -276,11 +276,18 @@
   .footer-wrapper .footer-right-wrapper {
     margin-left: 0;
   }
-  .footer-wrapper {
+  /* .footer-wrapper {
     background: linear-gradient(
       90deg,
       rgba(37, 80, 80, 1) 50%,
       rgba(2, 103, 101, 1) 0%
+    );
+  } */
+  .footer-wrapper {
+    background: linear-gradient(
+      0deg,
+      rgba(2, 103, 101, 1) 69%,
+      rgba(37, 80, 80, 1) 0%
     );
   }
 }
@@ -300,6 +307,9 @@
   }
   .tariffs-wrapper .tariffs-card-wrapper .tariffs-item-wrapper ul li {
     display: block;
+  }
+  .home-banner-wrapper {
+    aspect-ratio: 1/1;
   }
 }
 /* Breakpoint 425px */
