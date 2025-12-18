@@ -139,3 +139,5 @@ function animateCounter(el, target) {
     if (current >= target) clearInterval(interval);
   }, 50);
 }
+// ================================================
+

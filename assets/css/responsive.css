@@ -226,6 +226,17 @@
   .header .navbar-wrapper .navbar-menu-wrapper ul {
     gap: 15px;
   }
+  .swiper-container-wrapper .swiper-header {
+    text-align: center;
+  }
+  .stepper-header-wrapper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .steps::before {
+    display: none;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {

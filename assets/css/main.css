@@ -136,6 +136,9 @@ p {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
 }
+
+/*  */
+
 /*  */
 /* hover */
 /* .header .navbar-wrapper .navbar-menu-wrapper ul li a::after {
@@ -605,11 +608,10 @@ p {
 .service-wrapper .service-header-wrapper h3 {
   font-size: clamp(18px, 2vw, 24px);
   font-weight: 400;
-  line-height: 100%;
   letter-spacing: 0;
   color: var(--black-color);
   width: 100%;
-  max-width: 486px;
+  /* max-width: 300px; */
   margin-bottom: clamp(24px, 2vw, 32px);
 }
 
@@ -868,7 +870,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
   max-width: 600px;
   gap: clamp(20px, 9vw, 91px);
@@ -886,7 +888,7 @@ p {
   max-width: clamp(150px, 20vw, 279px);
 }
 .banner-equipment-content-wrapper .banner-equipment-header p {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--white-color);
 }
@@ -1629,14 +1631,79 @@ p {
   background-color: #e0e0e0;
 }
 /* ======================================= */
+.stepper-header-wrapper {
+  padding: clamp(32px, 5vw, 64px) 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+}
+
+.stepper-header-wrapper a {
+  font-size: clamp(13px, 1vw, 14px);
+  border: 1px solid var(--black-color);
+  color: var(--black-color);
+  border-radius: 52px;
+  padding: 12px 16px;
+  font-weight: 400;
+  line-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.stepper-header-wrapper a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stepper-header-wrapper a:hover {
+  background-color: var(--light-green);
+  box-shadow: rgba(71, 192, 162, 0.45) 0px 10px 30px,
+    rgba(0, 0, 0, 0.12) 0px 6px 12px;
+  color: var(--white-color);
+  border-color: transparent;
+}
+.stepper-header-wrapper a:hover::before {
+  left: 100%;
+}
+.stepper-header-wrapper h3 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: var(--black-color);
+  width: 100%;
+  max-width: 486px;
+  margin: 0;
+}
+.stepper-header-wrapper p {
+  font-size: clamp(15px, 1vw, 16px);
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--grey-color);
+  width: 100%;
+  max-width: 465px;
+}
 .steps {
   position: relative;
-  padding: 60px 0;
+  padding: clamp(20px, 4vw, 40px) 0 clamp(30px, 5vw, 60px);
 }
 .steps::before {
   content: "";
   position: absolute;
-  top: 95px; /* под кружками */
+  top: 75px; /* под кружками */
   left: 0;
   width: 100%;
   height: 2px;
