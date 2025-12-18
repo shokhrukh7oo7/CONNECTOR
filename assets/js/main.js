@@ -140,4 +140,26 @@ function animateCounter(el, target) {
   }, 50);
 }
 // ================================================
+document.querySelectorAll(".dropdown-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", (e) => {
+    e.preventDefault();
 
+    const parent = toggle.closest(".has-dropdown");
+
+    // закрываем другие
+    document.querySelectorAll(".has-dropdown").forEach((item) => {
+      if (item !== parent) item.classList.remove("open");
+    });
+
+    parent.classList.toggle("open");
+  });
+});
+
+// закрытие при клике вне меню
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".has-dropdown")) {
+    document
+      .querySelectorAll(".has-dropdown")
+      .forEach((item) => item.classList.remove("open"));
+  }
+});

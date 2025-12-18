@@ -226,6 +226,16 @@
   .header .navbar-wrapper .navbar-menu-wrapper ul {
     gap: 15px;
   }
+  .submenu {
+    position: static;
+    background: transparent;
+    backdrop-filter: none;
+    padding-left: 15px;
+  }
+
+  .submenu li a {
+    font-size: 16px;
+  }
   .swiper-container-wrapper .swiper-header {
     text-align: center;
   }
@@ -236,6 +246,16 @@
   }
   .steps::before {
     display: none;
+  }
+  .header .navbar-wrapper .navbar-menu-wrapper .submenu {
+    left: -100%;
+  }
+  .header
+    .navbar-wrapper
+    .navbar-menu-wrapper
+    li.has-dropdown:nth-of-type(3)
+    > .submenu {
+    left: -85%;
   }
 }
 /* Breakpoint 768px */
