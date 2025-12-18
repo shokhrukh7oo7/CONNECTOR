@@ -173,8 +173,7 @@ p {
 }
 
 /* active */
-.header .navbar-wrapper .navbar-menu-wrapper
-.has-dropdown.open > .submenu {
+.header .navbar-wrapper .navbar-menu-wrapper .has-dropdown.open > .submenu {
   display: flex;
   align-items: start;
 }
@@ -1498,34 +1497,34 @@ p {
   width: 100%;
   max-width: 465px;
 }
-.article-wrapper .article-card-wrapper {
+.article-card-wrapper {
   margin: 32px 0;
 }
-.article-wrapper .article-card-wrapper .item {
+.article-card-wrapper .item {
   background-color: var(--white-color);
   border: 1px solid var(--border-color);
   border-radius: 16px;
   height: 100%;
 }
-.article-wrapper .article-card-wrapper .item img {
+.article-card-wrapper .item img {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
-.article-wrapper .article-card-wrapper .item .item-content {
+.article-card-wrapper .item .item-content {
   padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 5px;
 }
-.article-wrapper .article-card-wrapper .item .item-content h6 {
+.article-card-wrapper .item .item-content h6 {
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;
   margin: 0;
   color: var(--black-color);
 }
-.article-wrapper .article-card-wrapper .item .item-content p {
+.article-card-wrapper .item .item-content p {
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
@@ -1536,7 +1535,7 @@ p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
-.article-wrapper .article-card-wrapper .item .item-content a {
+.article-card-wrapper .item .item-content a {
   color: var(--black-color);
   font-size: 14px;
   font-weight: 500;
@@ -1550,7 +1549,7 @@ p {
   position: relative;
   overflow: hidden;
 }
-.article-wrapper .article-card-wrapper .item .item-content a::before {
+.article-card-wrapper .item .item-content a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1565,20 +1564,20 @@ p {
   );
   transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.article-wrapper .article-card-wrapper .item .item-content a:hover {
+.article-card-wrapper .item .item-content a:hover {
   color: var(--white-color);
   background-color: var(--light-green);
 
   box-shadow: rgba(71, 192, 162, 0.45) 0px 10px 30px,
     rgba(0, 0, 0, 0.12) 0px 6px 12px;
 }
-.article-wrapper .article-card-wrapper .item .item-content a:hover img {
+.article-card-wrapper .item .item-content a:hover img {
   filter: brightness(0) invert(1);
 }
-.article-wrapper .article-card-wrapper .item .item-content a:hover::before {
+.article-card-wrapper .item .item-content a:hover::before {
   left: 100%;
 }
-.article-wrapper .article-card-wrapper .item .item-content a img {
+.article-card-wrapper .item .item-content a img {
   width: 20px;
   filter: brightness(0) invert(0);
 }
@@ -2083,6 +2082,56 @@ p {
 }
 /* ======================================= */
 /* MAIN END */
+
+/* ********************************************************************* */
+/* UTILITIES PAGE START */
+.utilities-wrapper .utilities-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: clamp(32px, 5vw, 64px) 0;
+}
+.utilities-wrapper .article-card-wrapper {
+  margin-top: 0;
+}
+.utilities-wrapper .utilities-header-wrapper h6 {
+  border-radius: 40px;
+  background-color: var(--light-green);
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 0;
+}
+.utilities-wrapper .utilities-header-wrapper h1 {
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: clamp(24px, 4vw, 48px);
+  margin: 0;
+}
+.utilities-wrapper .utilities-header-wrapper p {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+.utilities-wrapper .utilities-header-wrapper .breadcrumbs {
+  color: var(--grey-color);
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+.utilities-wrapper .utilities-header-wrapper .breadcrumbs span {
+  color: var(--light-green);
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+/* UTILITIES PAGE END */
+/* ********************************************************************* */
 
 /* FOOTERT START */
 .footer-wrapper {
