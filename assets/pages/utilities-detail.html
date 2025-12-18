@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connector</title>
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar-wrapper">
+          <div class="logo-wrapper">
+            <a href="/index.html">
+              <img src="/assets/images/home/logo.png" alt="image" />
+            </a>
+          </div>
+
+          <div class="mobile-menu">
+            <div class="navbar-menu-wrapper">
+              <ul>
+                <li><a href="/index.html" class="active">Главная</a></li>
+                <!-- <li><a href="#">Услуги</a></li> -->
+                <li class="has-dropdown">
+                  <a href="#!" class="dropdown-toggle">Услуги</a>
+                  <ul class="submenu">
+                    <li><a href="#">IT обслуживание</a></li>
+                    <li><a href="#">Инсталляция и настройка ПО</a></li>
+                    <li><a href="#">Проектирование IT систем</a></li>
+                    <li><a href="#">Поставка IT товаров</a></li>
+                    <li><a href="#">Поставка лицензионного ПО</a></li>
+                    <li><a href="#">Монтаж ИТ систем</a></li>
+                    <li><a href="#">Облачные услуги</a></li>
+                    <li><a href="#">Решение нестандартных задач</a></li>
+                    <li><a href="#">Сервисный центр</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#!" class="dropdown-toggle">Решения</a>
+                  <ul class="submenu">
+                    <li><a href="#">Решение IT задач в каждой отрасли</a></li>
+                    <li><a href="#">Типовые IT решения</a></li>
+                    <li><a href="#">Об аутсорсинге</a></li>
+                  </ul>
+                </li>
+                <!-- <li><a href="#">Решения</a></li> -->
+                <li><a href="/assets/pages/utilities.html">Полезности</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Фотособытия</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-right-wrapper">
+              <div class="search-wrapper">
+                <form class="search-box" id="openSearch">
+                  <button type="button">
+                    <img src="/assets/images/home/search.svg" alt="image" />
+                  </button>
+                </form>
+              </div>
+
+              <div class="language-wrapper">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="/assets/images/home/ru.png" alt="image" />
+                    Рус
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="/assets/images/home/en.svg" alt="" />
+                        En
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="contact-us-btn-wrapper">
+                <button>Связаться снами</button>
+              </div>
+            </div>
+
+            <button class="mobile-close" aria-label="Close">
+              <img src="/assets/images/home/close.svg" alt="image" />
+            </button>
+          </div>
+
+          <button class="burger-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- SEARCH START -->
+    <div class="search-overlay" id="searchOverlay"></div>
+
+    <!-- Search panel -->
+    <div class="search-panel" id="searchPanel">
+      <h3>Поиск по сайту</h3>
+
+      <form class="search-form">
+        <input type="text" placeholder="Например, IT обслуживание" autofocus />
+        <button type="submit">Начать поиск</button>
+      </form>
+    </div>
+    <!-- SEARCH END -->
+
+    <main>
+      <div class="section">
+        <div class="container">
+          <div class="utilities-wrapper">
+            <div class="utilities-header-wrapper">
+              <h6>Решения</h6>
+              <h1>Об аутсорсинге</h1>
+              <p>
+                Развеем мифы об аутсорсинге. В этой статье узнаете много
+                инсайтов об этой сфере
+              </p>
+              <p class="breadcrumbs">
+                Главная / Полезности / <span>Полезности</span>
+              </p>
+            </div>
+
+            <div class="detail-content-wrapper">
+              <div class="banner-wrapper">
+                <img src="/assets/images/detail/1.png" alt="image" />
+              </div>
+
+              <div class="content-wrapper">
+                <div class="content">
+                  <h6>Википедия гласит:</h6>
+                  <p>
+                    Аутсо́рсинг (от англ. outsourcing: (outer-source-using)
+                    использование внешнего источника и/или ресурса) — передача
+                    организацией, на основании договора, определённых видов или
+                    функций производственной предпринимательской деятельности
+                    другой компании, действующей в нужной области. В отличие от
+                    услуг и поддержки, имеющих разовый, эпизодический или
+                    случайный характер и ограниченных началом и концом, на
+                    аутсорсинг обычно передаются функции по профессиональной
+                    поддержке бесперебойной работы отдельных систем и
+                    инфраструктуры на основе длительного контракта (не менее 1
+                    года).
+                    <br />
+                    <br />
+                    Аутсорсинг позволяет повысить эффективность предприятия в
+                    целом и использовать освободившиеся организационные,
+                    финансовые и человеческие ресурсы для развития новых
+                    направлений или концентрации усилий, не требующих
+                    повышенного внимания.
+                  </p>
+                  <h3>
+                    Почему обслуживание IT-инфраструктуры Заказчика на условиях
+                    аутсорсинга лучше разовых вызовов мастера?
+                  </h3>
+
+                  <ol>
+                    <li>
+                      Исключаются лишние платежи. Вы получаете результат за
+                      четко определенную фиксированную стоимость. Нет никаких
+                      подсчетов часов работы специалиста, никаких «насиженных»
+                      часов и навязанных услуг.
+                    </li>
+                    <li>
+                      Аутсорсинг это стратегический подход к решению технических
+                      задач. А разовые выезды это всего лишь тактические
+                      действия по «латанию дыр в лодке» Вашей организации.
+                      Данный подход позволяет правильно и грамотно организовать
+                      работу (выработать стратегию) в расчете на долгосрочный
+                      период.
+                    </li>
+                    <li>
+                      По роду деятельности нам приходится взаимодействовать со
+                      многими компаниями работающими в сфере IT в мире. Что
+                      позволяет правильно оценивать обстановку, развитие,
+                      отслеживать тенденции, знать состояние этого рынка. Этим
+                      опытом мы будем постоянно делиться с Вами.
+                    </li>
+                    <li>
+                      Качество обслуживания на условиях абонентского
+                      обслуживания выше, чем при разовых вызовах. Проблемы
+                      решаются фундаментально, чтобы избежать их появления в
+                      будущем. Разовое же обслуживание нацелено на решение
+                      «здесь и сейчас» любыми средствами.
+                    </li>
+                    <li>
+                      Абонентам с которыми работа ведется длительное время могут
+                      быть предоставлены специальные выгодные условия.
+                    </li>
+                  </ol>
+
+                  <h3>
+                    Преимущества обслуживания юридическим лицом перед физическим
+                  </h3>
+
+                  <ol>
+                    <li>
+                      Сумма обслуживания МЕНЬШЕ суммы на содержание в штате
+                      компании одного или нескольких человек IT- специалистов.
+                    </li>
+                    <li>
+                      Затраты в этом случае не облагаются подоходным налогом,
+                      отчислениям в пенсионный фонд, страхованием  и прочими
+                      расходами на содержание физического сотрудника.
+                    </li>
+                    <li>
+                      Обслуживающая компания не уйдет в отпуск, не заболеет, не
+                      отпросится домой, внезапно не уволится, не «поругается» с
+                      персоналом, потому как она заинтересована в долгосрочном
+                      сотрудничестве и обладает возможностью всегда предоставить
+                      замену одного хорошего специалиста еще лучшим.
+                    </li>
+                    <li>
+                      Удобство работы с единой обслуживающей компанией, все
+                      вопросы «в одно окно». Как вывод - оперативное
+                      реагирование, тонкое понимание технических вопросов,
+                      идеальная связка «железо-софт».
+                    </li>
+                    <li>
+                      Внедрение свежих идей и решений по оптимизации и улучшению
+                      работы. Работник, работающий на зарплату, не заинтересован
+                      в лишних движениях, улучшениях, оптимизациях.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="similar-wrapper">
+                <h3>Похожие статьи</h3>
+
+                <div class="article-card-wrapper">
+                  <div class="row m-0">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 p-2">
+                      <div class="item">
+                        <img src="/assets/images/home/ar-2.png" alt="image" />
+                        <div class="item-content">
+                          <h6>Тренды в аутсорсинге</h6>
+                          <p>
+                            Обзор последних трендов и технологий, которые
+                            изменяют аутсорсинг в 2023 году.
+                          </p>
+                          <a href="/assets/pages/utilities-detail.html">
+                            Узнать больше
+                            <img
+                              src="/assets/images/home/arrow-up.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 p-2">
+                      <div class="item">
+                        <img src="/assets/images/home/ar-3.png" alt="image" />
+                        <div class="item-content">
+                          <h6>Преимущества аутсорсинга</h6>
+                          <p>
+                            Почему компании выбирают аутсорсинг? Откройте для
+                            себя ключевые преимущества данной стратегии. Почему
+                            компании выбирают аутсорсинг? Откройте для себя
+                            ключевые преимущества данной стратегии. Почему
+                            компании выбирают аутсорсинг? Откройте для себя
+                            ключевые преимущества данной стратегии.
+                          </p>
+                          <a href="/assets/pages/utilities-detail.html">
+                            Узнать больше
+                            <img
+                              src="/assets/images/home/arrow-up.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 p-2">
+                      <div class="item">
+                        <img src="/assets/images/home/ar-1.png" alt="image" />
+                        <div class="item-content">
+                          <h6>Об аутсорсинге</h6>
+                          <p>
+                            Развеем мифы об аутсорсинге. В этой статье узнаете
+                            много инсайтов об этой сфере
+                          </p>
+                          <a href="/assets/pages/utilities-detail.html">
+                            Узнать больше
+                            <img
+                              src="/assets/images/home/arrow-up.svg"
+                              alt="image"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row m-0 p-0">
+            <div class="col-12 col-md-4 left-bg">
+              <div class="footer-left-wrapper">
+                <div class="logo-wrapper">
+                  <img src="/assets/images/home/logo.png" alt="image" />
+                </div>
+
+                <ul>
+                  <li>
+                    Республика Узбекистан, г. Ташкент, 100011, ул. Навои 16А
+                  </li>
+                  <li>Моб.: +998 (98) 365-93-25</li>
+                  <li>Режим работы: Пн-Пт с 9:00 до 18:00</li>
+                  <li>
+                    Для абонентов действует круглосуточная поддержка по телефону
+                  </li>
+                </ul>
+
+                <div class="phone-wrapper">
+                  <h5>Телефоны для связи:</h5>
+                  <a href="#">Тел/факс: +998 (71) 241-56-50</a>
+                  <a href="#">Моб: +998 (98) 365-93-25</a>
+                </div>
+
+                <div class="social-wrapper">
+                  <a href="#">Facebook</a>
+                  <a href="№">Twitter / X</a>
+                  <a href="№">Instagram</a>
+                  <a href="№">Telegram</a>
+                </div>
+
+                <div class="copyright-wrapper">
+                  <p>
+                    © 2009-2025 #connector. Сайт содержит авторский контент.
+                    Копирование запрещено. Все права защищены.
+                  </p>
+                  <p>
+                    Сайт разработал с любовью
+                    <a href="https://webline.uz/">Webline</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-8 right-bg">
+              <div class="footer-right-wrapper">
+                <h2>Наши услуги</h2>
+
+                <div class="useful-links-wrapper">
+                  <ul>
+                    <li><a href="#">IT обслуживание </a></li>
+                    <li><a href="#">Инсталляция и настройка ПО </a></li>
+                    <li><a href="#">Проектирование IT систем </a></li>
+                    <li><a href="#">Поставка IT товаров </a></li>
+                    <li><a href="#">Поставка лицензионного ПО</a></li>
+                  </ul>
+
+                  <ul>
+                    <li><a href="#">Монтаж IT систем </a></li>
+                    <li><a href="#">Облачные услуги </a></li>
+                    <li><a href="#">Решение нестандартных задач </a></li>
+                    <li><a href="#">Сервисный центр</a></li>
+                  </ul>
+
+                  <ul>
+                    <li><a href="#">Серверы </a></li>
+                    <li><a href="#">Видеонаблюдение </a></li>
+                    <li><a href="#">Контроль доступа </a></li>
+                    <li><a href="#">IT-безопасность </a></li>
+                    <li><a href="#">Лоĸальные сети ЛВС/СКС/ ВОЛС </a></li>
+                    <li><a href="#">Корпоративный Wi-Fi</a></li>
+                  </ul>
+
+                  <ul>
+                    <li><a href="#">IP-Телефония </a></li>
+                    <li><a href="#">Звукоусиление</a></li>
+                    <li><a href="#">ОПС</a></li>
+                    <li><a href="#">Решения для видео презентаций </a></li>
+                    <li><a href="#">Видео ĸонференц-связь (ВКС) </a></li>
+                    <li><a href="#">Аудио конференции</a></li>
+                  </ul>
+                </div>
+
+                <div class="mobile-copyright">
+                  <p>
+                    © 2009-2025 #connector. Сайт содержит авторский контент.
+                    Копирование запрещено. Все права защищены.
+                  </p>
+                  <p>
+                    Сайт разработал с любовью
+                    <a href="https://webline.uz/">Webline</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- SWIPER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MAIN JS -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
