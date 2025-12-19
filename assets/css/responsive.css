@@ -257,6 +257,13 @@
     > .submenu {
     left: -85%;
   }
+  .detail-content-wrapper .content-wrapper .content {
+    align-items: center;
+    text-align: center;
+  }
+  .detail-content-wrapper .comment-wrapper {
+    text-align: center;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {

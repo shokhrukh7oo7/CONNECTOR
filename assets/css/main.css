@@ -2194,6 +2194,81 @@ p {
 }
 /* UTILITIES PAGE END */
 /* ********************************************************************* */
+/* CLIENTS START */
+.detail-content-wrapper .content-wrapper .content h5 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--black-color);
+  margin: 0;
+}
+.detail-content-wrapper .comment-wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.detail-content-wrapper .comment-wrapper h3 {
+  font-size: clamp(13px, 1vw, 14px);
+  border: 1px solid var(--black-color);
+  color: var(--black-color);
+  border-radius: 52px;
+  padding: 12px 16px;
+  font-weight: 400;
+  line-height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.detail-content-wrapper .comment-wrapper h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: left 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.detail-content-wrapper .comment-wrapper h3:hover {
+  color: var(--white-color);
+  background-color: var(--light-green);
+  border-color: transparent;
+  box-shadow: rgba(71, 192, 162, 0.45) 0px 10px 30px,
+    rgba(0, 0, 0, 0.12) 0px 6px 12px;
+}
+.detail-content-wrapper .comment-wrapper h3:hover::before {
+  left: 100%;
+}
+
+.detail-content-wrapper .comment-wrapper p {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--black-color);
+  width: 100%;
+  /* max-width: 300px; */
+  margin-bottom: clamp(10px, 1vw, 16px);
+}
+
+.detail-content-wrapper .comment-card-wrapper {
+  margin-bottom: clamp(16px, 2vw, 32px);
+}
+.detail-content-wrapper .comment-card-wrapper .item {
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  height: 100%;
+}
+.detail-content-wrapper .comment-card-wrapper .item img {
+  border-radius: 12px;
+  border: 1px solid #8d8d8d;
+}
+/* CLIENTS END */
+/* ********************************************************************* */
 
 /* FOOTERT START */
 .footer-wrapper {
