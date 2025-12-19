@@ -2376,13 +2376,13 @@ p {
   .right-image-wrapper
   p {
   position: absolute;
-  bottom: 24px;
-  left: 24px;
+  bottom: clamp(14px, 1.5vw, 24px);
+  left: clamp(14px, 1.5vw, 24px);
   color: var(--white-color);
   border-radius: 40px;
   padding: 4px 10px;
   background-color: var(--light-green);
-  font-size: 12px;
+  font-size: 11px;
 }
 .contact-wrapper .contact-body-wrapper .address-location-wrapper {
   display: flex;
