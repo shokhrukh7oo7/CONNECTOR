@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connector</title>
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+    />
+
+    <!-- FANCYBOX CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar-wrapper">
+          <div class="logo-wrapper">
+            <a href="/index.html">
+              <img src="/assets/images/home/logo.png" alt="image" />
+            </a>
+          </div>
+
+          <div class="mobile-menu">
+            <div class="navbar-menu-wrapper">
+              <ul>
+                <li><a href="/index.html" class="active">Главная</a></li>
+                <!-- <li><a href="#">Услуги</a></li> -->
+                <li class="has-dropdown">
+                  <a href="#!" class="dropdown-toggle">Услуги</a>
+                  <ul class="submenu">
+                    <li><a href="#">IT обслуживание</a></li>
+                    <li><a href="#">Инсталляция и настройка ПО</a></li>
+                    <li><a href="#">Проектирование IT систем</a></li>
+                    <li><a href="#">Поставка IT товаров</a></li>
+                    <li><a href="#">Поставка лицензионного ПО</a></li>
+                    <li><a href="#">Монтаж ИТ систем</a></li>
+                    <li><a href="#">Облачные услуги</a></li>
+                    <li><a href="#">Решение нестандартных задач</a></li>
+                    <li><a href="#">Сервисный центр</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#!" class="dropdown-toggle">Решения</a>
+                  <ul class="submenu">
+                    <li><a href="#">Решение IT задач в каждой отрасли</a></li>
+                    <li><a href="#">Типовые IT решения</a></li>
+                    <li><a href="#">Об аутсорсинге</a></li>
+                  </ul>
+                </li>
+                <!-- <li><a href="#">Решения</a></li> -->
+                <li><a href="/assets/pages/utilities.html">Полезности</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Фотособытия</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-right-wrapper">
+              <div class="search-wrapper">
+                <form class="search-box" id="openSearch">
+                  <button type="button">
+                    <img src="/assets/images/home/search.svg" alt="image" />
+                  </button>
+                </form>
+              </div>
+
+              <div class="language-wrapper">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="/assets/images/home/ru.png" alt="image" />
+                    Рус
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="/assets/images/home/en.svg" alt="" />
+                        En
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="contact-us-btn-wrapper">
+                <button>Связаться снами</button>
+              </div>
+            </div>
+
+            <button class="mobile-close" aria-label="Close">
+              <img src="/assets/images/home/close.svg" alt="image" />
+            </button>
+          </div>
+
+          <button class="burger-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- SEARCH START -->
+    <div class="search-overlay" id="searchOverlay"></div>
+
+    <!-- Search panel -->
+    <div class="search-panel" id="searchPanel">
+      <h3>Поиск по сайту</h3>
+
+      <form class="search-form">
+        <input type="text" placeholder="Например, IT обслуживание" autofocus />
+        <button type="submit">Начать поиск</button>
+      </form>
+    </div>
+    <!-- SEARCH END -->
+
+    <main>
+      <section class="contact-container">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-header-wrapper">
+              <h6>Контакты</h6>
+              <h1>Контактные данные команды IT специалистов</h1>
+              <p class="breadcrumbs">Главная / <span>Клиенты</span></p>
+            </div>
+
+            <div class="contact-body-wrapper">
+              <!-- contact -->
+              <div class="address-wrapper">
+                <h3>Наш адрес:</h3>
+                <p>
+                  Республика Узбекистан, г.Ташкент, <br />
+                  100011, ул.Навои 16А, офис 408
+                </p>
+                <p>
+                  <span>Моб: </span><a href="tel:">+998 (96) 365-93-25</a> (для
+                  абонентов круглосуточно),
+                </p>
+                <p>
+                  <span>Тел/факс: </span><a href="tel:">+998 (71) 241-56-50</a>
+                </p>
+                <p>
+                  <span>E-mail: </span><a href="mailto:">info@connector.uz</a>
+                </p>
+                <p><span>Режим работы: </span>Пн-Пт с 9-00 по 18-00</p>
+              </div>
+
+              <!-- address -->
+              <div class="address-image-wrapper">
+                <div class="left-image-wrapper">
+                  <img src="/assets/images/contact/address-1.png" alt="image" />
+                  <p>Внешний вид входа в наше здание</p>
+                </div>
+                <div class="right-image-wrapper">
+                  <img src="/assets/images/contact/address-2.png" alt="image" />
+                  <p>Схема для ориентирования на местности</p>
+                </div>
+              </div>
+
+              <!-- maps -->
+              <div class="address-location-wrapper">
+                <div class="yandex-map-wrapper">
+                  <iframe
+                    src="https://yandex.uz/map-widget/v1/?ll=69.259578%2C41.322278&z=18&l=map&pt=69.259578,41.322278,pm2rdm"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                  <!-- <p>Яндекс карты</p> -->
+                </div>
+                <div class="google-map-wrapper">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.375087624003!2d69.25658791091261!3d41.32245639990164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bfb07ea59e5%3A0x14e42da4d90173d7!2sTole-Bi%20boutique%20store!5e0!3m2!1sru!2s!4v1766141361126!5m2!1sru!2s"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                  <!-- <p>Google Maps</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row m-0 p-0">
+            <div class="col-12 col-md-4 left-bg">
+              <div class="footer-left-wrapper">
+                <div class="logo-wrapper">
+                  <img src="/assets/images/home/logo.png" alt="image" />
+                </div>
+
+                <ul>
+                  <li>
+                    Республика Узбекистан, г. Ташкент, 100011, ул. Навои 16А
+                  </li>
+                  <li>Моб.: +998 (98) 365-93-25</li>
+                  <li>Режим работы: Пн-Пт с 9:00 до 18:00</li>
+                  <li>
+                    Для абонентов действует круглосуточная поддержка по телефону
+                  </li>
+                </ul>
+
+                <div class="phone-wrapper">
+                  <h5>Телефоны для связи:</h5>
+                  <a href="#">Тел/факс: +998 (71) 241-56-50</a>
+                  <a href="#">Моб: +998 (98) 365-93-25</a>
+                </div>
+
+                <div class="social-wrapper">
+                  <a href="#">Facebook</a>
+                  <a href="№">Twitter / X</a>
+                  <a href="№">Instagram</a>
+                  <a href="№">Telegram</a>
+                </div>
+
+                <div class="copyright-wrapper">
+                  <p>
+                    © 2009-2025 #connector. Сайт содержит авторский контент.
+                    Копирование запрещено. Все права защищены.
+                  </p>
+                  <p>
+                    Сайт разработал с любовью
+                    <a href="https://webline.uz/">Webline</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-8 right-bg">
+              <div class="footer-right-wrapper">
+                <h2>Наши услуги</h2>
+
+                <div class="useful-links-wrapper">
+                  <ul>
+                    <li><a href="#">IT обслуживание </a></li>
+                    <li><a href="#">Инсталляция и настройка ПО </a></li>
+                    <li><a href="#">Проектирование IT систем </a></li>
+                    <li><a href="#">Поставка IT товаров </a></li>
+                    <li><a href="#">Поставка лицензионного ПО</a></li>
+                  </ul>
+
+                  <ul>
+                    <li><a href="#">Монтаж IT систем </a></li>
+                    <li><a href="#">Облачные услуги </a></li>
+                    <li><a href="#">Решение нестандартных задач </a></li>
+                    <li><a href="#">Сервисный центр</a></li>
+                  </ul>
+
+                  <ul>
+                    <li><a href="#">Серверы </a></li>
+                    <li><a href="#">Видеонаблюдение </a></li>
+                    <li><a href="#">Контроль доступа </a></li>
+                    <li><a href="#">IT-безопасность </a></li>
+                    <li><a href="#">Лоĸальные сети ЛВС/СКС/ ВОЛС </a></li>
+                    <li><a href="#">Корпоративный Wi-Fi</a></li>
+                  </ul>
+
+                  <ul>
+                    <li><a href="#">IP-Телефония </a></li>
+                    <li><a href="#">Звукоусиление</a></li>
+                    <li><a href="#">ОПС</a></li>
+                    <li><a href="#">Решения для видео презентаций </a></li>
+                    <li><a href="#">Видео ĸонференц-связь (ВКС) </a></li>
+                    <li><a href="#">Аудио конференции</a></li>
+                  </ul>
+                </div>
+
+                <div class="mobile-copyright">
+                  <p>
+                    © 2009-2025 #connector. Сайт содержит авторский контент.
+                    Копирование запрещено. Все права защищены.
+                  </p>
+                  <p>
+                    Сайт разработал с любовью
+                    <a href="https://webline.uz/">Webline</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- FANCYBOX -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- SWIPER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MAIN JS -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -2094,6 +2094,9 @@ p {
   text-align: center;
   gap: 10px;
   padding: clamp(16px, 3vw, 32px) 0;
+  width: 100%;
+  max-width: 791px;
+  margin: 0 auto;
 }
 .utilities-wrapper .article-card-wrapper {
   margin-top: 0;
@@ -2269,7 +2272,143 @@ p {
 }
 /* CLIENTS END */
 /* ********************************************************************* */
+/* CONTACT START */
+.contact-container {
+  background-color: #f3f3f3;
+}
+.contact-wrapper .contact-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: clamp(16px, 3vw, 32px) 0;
+  width: 100%;
+  max-width: 791px;
+  margin: 0 auto;
+}
+.contact-wrapper .contact-header-wrapper h6 {
+  border-radius: 40px;
+  background-color: var(--light-green);
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 0;
+}
+.contact-wrapper .contact-header-wrapper h1 {
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: clamp(24px, 4vw, 48px);
+  margin: 0;
+}
+.contact-wrapper .contact-header-wrapper .breadcrumbs {
+  color: var(--grey-color);
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+.contact-wrapper .contact-header-wrapper .breadcrumbs span {
+  color: var(--light-green);
+}
+.contact-wrapper .contact-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 2vw, 32px);
+  padding-bottom: clamp(32px, 5vw, 64px);
+}
+.contact-wrapper .contact-body-wrapper .address-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contact-wrapper .contact-body-wrapper .address-wrapper h3 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--black-color);
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contact-wrapper .contact-body-wrapper .address-wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black-color);
+}
+.contact-wrapper .contact-body-wrapper .address-wrapper p span {
+  font-weight: 700;
+}
+.contact-wrapper .contact-body-wrapper .address-wrapper p a {
+  color: var(--light-green);
+}
+.contact-wrapper .contact-body-wrapper .address-image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(14px, 1.5vw, 24px);
+}
+.contact-wrapper
+  .contact-body-wrapper
+  .address-image-wrapper
+  .left-image-wrapper {
+  width: 50%;
+  position: relative;
+}
+.contact-wrapper
+  .contact-body-wrapper
+  .address-image-wrapper
+  .right-image-wrapper {
+  width: 50%;
+  position: relative;
+}
 
+.contact-wrapper .contact-body-wrapper .address-image-wrapper img {
+  border-radius: 32px;
+  height: 100%;
+  aspect-ratio: 2 / 1.6;
+}
+.contact-wrapper
+  .contact-body-wrapper
+  .address-image-wrapper
+  .left-image-wrapper
+  p,
+.contact-wrapper
+  .contact-body-wrapper
+  .address-image-wrapper
+  .right-image-wrapper
+  p {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  color: var(--white-color);
+  border-radius: 40px;
+  padding: 4px 10px;
+  background-color: var(--light-green);
+  font-size: 12px;
+}
+.contact-wrapper .contact-body-wrapper .address-location-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(14px, 1.5vw, 24px);
+}
+.contact-wrapper
+  .contact-body-wrapper
+  .address-location-wrapper
+  .yandex-map-wrapper {
+  width: 50%;
+}
+.contact-wrapper
+  .contact-body-wrapper
+  .address-location-wrapper
+  .google-map-wrapper {
+  width: 50%;
+}
+.contact-wrapper
+  .contact-body-wrapper
+  .address-location-wrapper iframe {
+    width: 100%;
+    border-radius: 32px;
+  }
+/* CONTACT END */
+/* ********************************************************************* */
 /* FOOTERT START */
 .footer-wrapper {
   background: #255050;

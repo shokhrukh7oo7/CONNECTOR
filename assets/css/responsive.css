@@ -264,6 +264,12 @@
   .detail-content-wrapper .comment-wrapper {
     text-align: center;
   }
+
+  .contact-wrapper .contact-body-wrapper .address-wrapper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {
@@ -348,6 +354,33 @@
       rgba(37, 80, 80, 1) 0%
     );
   }
+  .contact-wrapper .contact-body-wrapper .address-image-wrapper,
+  .contact-wrapper .contact-body-wrapper .address-location-wrapper {
+    flex-direction: column;
+  }
+  .contact-wrapper
+    .contact-body-wrapper
+    .address-image-wrapper
+    .left-image-wrapper,
+  .contact-wrapper
+    .contact-body-wrapper
+    .address-image-wrapper
+    .right-image-wrapper,
+  .contact-wrapper
+    .contact-body-wrapper
+    .address-location-wrapper
+    .yandex-map-wrapper,
+  .contact-wrapper
+    .contact-body-wrapper
+    .address-location-wrapper
+    .google-map-wrapper {
+    width: 100%;
+  }
+    .contact-wrapper
+    .contact-body-wrapper
+    .address-location-wrapper iframe {
+      height: 350px;
+    }
 }
 /* Breakpoint 576px */
 @media (max-width: 576px) {
