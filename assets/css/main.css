@@ -707,7 +707,7 @@ p {
   width: 25px;
 }
 .service-wrapper .service-content-wrapper .item .item-content p {
-  font-size: clamp(18px, 2vw, 24px);
+  font-size: clamp(18px, 2vw, 23px);
   font-weight: 400;
   line-height: 120%;
   letter-spacing: 0;
@@ -2401,12 +2401,10 @@ p {
   .google-map-wrapper {
   width: 50%;
 }
-.contact-wrapper
-  .contact-body-wrapper
-  .address-location-wrapper iframe {
-    width: 100%;
-    border-radius: 32px;
-  }
+.contact-wrapper .contact-body-wrapper .address-location-wrapper iframe {
+  width: 100%;
+  border-radius: 32px;
+}
 /* CONTACT END */
 /* ********************************************************************* */
 /* FOOTERT START */
