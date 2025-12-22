@@ -2580,7 +2580,50 @@ p {
   padding: 5px 10px;
   margin: 0;
   display: inline-block;
+  position: relative;
+  overflow: hidden;
 }
+
+.it-service-wrapper
+  .banner-content-wrapper
+  .partner-content
+  .partner-content-header
+  p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: left 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.it-service-wrapper
+  .banner-content-wrapper
+  .partner-content
+  .partner-content-header
+  p:hover {
+  color: var(--white-color);
+  background-color: var(--light-green);
+  border-color: transparent;
+  box-shadow: rgba(71, 192, 162, 0.45) 0px 10px 30px,
+    rgba(0, 0, 0, 0.12) 0px 6px 12px;
+}
+
+.it-service-wrapper
+  .banner-content-wrapper
+  .partner-content
+  .partner-content-header
+  p:hover::before {
+  left: 100%;
+}
+
 .it-service-wrapper
   .banner-content-wrapper
   .partner-content
@@ -2716,6 +2759,14 @@ p {
   color: #525252;
   width: 100%;
   max-width: 486px;
+}
+
+.direction-container {
+  margin: clamp(64px, 10vw, 128px) 0;
+}
+
+.direction-container .directions-wrapper .directions-content-wrapper {
+  margin: clamp(24px, 3vw, 48px) 0 0;
 }
 /* IT SERVICE END */
 /* ********************************************************************* */
