@@ -270,6 +270,49 @@
     align-items: center;
     text-align: center;
   }
+  .it-service-wrapper {
+    text-align: center;
+  }
+  .it-service-wrapper .banner-content-wrapper .extra-section-wrapper h5,
+  .it-service-wrapper .banner-content-wrapper .content h6 {
+    max-width: 100%;
+  }
+  .it-service-wrapper
+    .banner-content-wrapper
+    .extra-section-wrapper
+    .left-right-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .it-service-wrapper
+    .banner-content-wrapper
+    .extra-section-wrapper
+    .left-right-wrapper
+    .left-wrapper
+    ul
+    li {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .it-service-wrapper
+    .banner-content-wrapper
+    .partner-content
+    .partner-content-header {
+    align-items: center;
+  }
+  .it-service-wrapper
+    .banner-content-wrapper
+    .partner-content
+    .partner-content-body
+    ul
+    li,
+  .it-service-wrapper
+    .banner-content-wrapper
+    .extra-info-wrapper
+    .extra-info-content
+    ul
+    li {
+    text-align: start;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {
@@ -376,11 +419,9 @@
     .google-map-wrapper {
     width: 100%;
   }
-    .contact-wrapper
-    .contact-body-wrapper
-    .address-location-wrapper iframe {
-      height: 350px;
-    }
+  .contact-wrapper .contact-body-wrapper .address-location-wrapper iframe {
+    height: 350px;
+  }
 }
 /* Breakpoint 576px */
 @media (max-width: 576px) {
