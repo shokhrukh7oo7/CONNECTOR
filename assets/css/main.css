@@ -2762,7 +2762,7 @@ p {
 }
 
 .direction-container {
-  margin: clamp(64px, 10vw, 128px) 0;
+  margin: clamp(20px, 3vw, 40px) 0;
 }
 
 .direction-container .directions-wrapper .directions-content-wrapper {
