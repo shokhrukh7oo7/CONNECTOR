@@ -3007,7 +3007,130 @@ p {
   font-weight: 400;
   font-size: clamp(16px, 1.3vw, 18px);
 }
+
 /* IT SYSTEM DESIGN END */
+/* ********************************************************************* */
+/* SUPPLY OF IT GOODS START */
+.supply-left-right-wrapper {
+  padding-bottom: clamp(32px, 5vw, 64px);
+}
+.supply-left-right-wrapper h3 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--black-color);
+  margin-bottom: 24px;
+}
+.supply-left-right-wrapper .left-right-wrapper {
+  display: flex;
+  gap: 24px;
+}
+.supply-left-right-wrapper .left-right-wrapper .left-wrapper {
+  width: 48%;
+}
+.supply-left-right-wrapper .left-right-wrapper .left-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  padding-left: 1rem;
+}
+.supply-left-right-wrapper .left-right-wrapper .left-wrapper ul li {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 16px;
+  padding: 12px 0;
+}
+.supply-left-right-wrapper .left-right-wrapper .left-wrapper ul li img {
+  width: 24px;
+  height: 24px;
+}
+.supply-left-right-wrapper .left-right-wrapper .right-wrapper img {
+  height: auto;
+  aspect-ratio: 384 / 512;
+  object-fit: cover;
+}
+.supply-content-body {
+  padding-bottom: clamp(25px, 4vw, 50px);
+}
+.supply-content-body ul {
+  padding-left: 1rem !important;
+}
+.supply-extra-wrapper {
+  margin-bottom: clamp(32px, 5vw, 64px);
+}
+.supply-extra-wrapper img {
+  border-radius: 24px;
+  height: auto;
+  aspect-ratio: 1200 / 644;
+  object-fit: cover;
+}
+.product-wrapper .product-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding: 0 0 clamp(16px, 3vw, 32px);
+}
+.product-wrapper .product-header-wrapper h6 {
+  border-radius: 40px;
+  border: 1px solid var(--black-color);
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 12px 16px;
+  margin: 0 0 16px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-wrapper .product-header-wrapper h6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: left 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product-wrapper .product-header-wrapper h6:hover {
+  color: var(--white-color);
+  background-color: var(--light-green);
+  border-color: transparent;
+  box-shadow: rgba(71, 192, 162, 0.45) 0px 10px 30px,
+    rgba(0, 0, 0, 0.12) 0px 6px 12px;
+}
+.product-wrapper .product-header-wrapper h6:hover::before {
+  left: 100%;
+}
+.product-wrapper .product-header-wrapper h5 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: var(--black-color);
+  width: 100%;
+  max-width: 486px;
+  margin: 0;
+}
+.product-wrapper .product-header-wrapper p {
+  font-size: clamp(15px, 1vw, 16px);
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--grey-color);
+  width: 100%;
+  max-width: 445px;
+}
+/* SUPPLY OF IT GOODS END */
 /* ********************************************************************* */
 /* FOOTERT START */
 .footer-wrapper {
