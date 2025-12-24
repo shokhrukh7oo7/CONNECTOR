@@ -2791,7 +2791,7 @@ p {
 .inst-left-right-wrapper ul li {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 15px;
   font-size: 17px;
   line-height: 140%;
@@ -2848,7 +2848,7 @@ p {
 .inst-extra-wrapper-2 .ins-extra-wrapper-two-content ul li {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 15px;
   font-size: 17px;
   line-height: 140%;
@@ -3195,19 +3195,8 @@ p {
   font-weight: 400;
   line-height: 120%;
   color: var(--black-color);
-  position: relative;
-  overflow: hidden;
 }
-.product-item-wrapper
-  .product-container
-  .item
-  .right-wrapper
-  .btn-wrapper
-  a::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
+
 .product-item-wrapper
   .product-container
   .item
@@ -3264,7 +3253,16 @@ p {
   .btn-wrapper:hover::before {
   left: 100%;
 }
-
+.product-item-wrapper
+  .product-container
+  .item
+  .right-wrapper
+  .btn-wrapper
+  a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
 .product-item-wrapper .product-container .item .right-wrapper .btn-wrapper img {
   width: 20px;
 }
