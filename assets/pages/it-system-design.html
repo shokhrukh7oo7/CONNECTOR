@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connector</title>
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+    />
+
+    <!-- FANCYBOX CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+    />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar-wrapper">
+          <div class="logo-wrapper">
+            <a href="/index.html">
+              <img src="/assets/images/home/logo.png" alt="image" />
+            </a>
+          </div>
+
+          <div class="mobile-menu">
+            <div class="navbar-menu-wrapper">
+              <ul>
+                <li><a href="/index.html" class="active">Главная</a></li>
+                <!-- <li><a href="#">Услуги</a></li> -->
+                <li class="has-dropdown">
+                  <a href="#!" class="dropdown-toggle">Услуги</a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="/assets/pages/it-service.html"
+                        >IT обслуживание</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/assets/pages/installation-and-setting.html"
+                        >Инсталляция и настройка ПО</a
+                      >
+                    </li>
+                    <li><a href="#">Проектирование IT систем</a></li>
+                    <li><a href="#">Поставка IT товаров</a></li>
+                    <li><a href="#">Поставка лицензионного ПО</a></li>
+                    <li><a href="#">Монтаж ИТ систем</a></li>
+                    <li><a href="#">Облачные услуги</a></li>
+                    <li><a href="#">Решение нестандартных задач</a></li>
+                    <li><a href="#">Сервисный центр</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#!" class="dropdown-toggle">Решения</a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="/assets/pages/solution-it-problems.html"
+                        >Решение IT задач в каждой отрасли</a
+                      >
+                    </li>
+                    <li><a href="#">Типовые IT решения</a></li>
+                  </ul>
+                </li>
+                <!-- <li><a href="#">Решения</a></li> -->
+                <li><a href="/assets/pages/utilities.html">Полезности</a></li>
+                <li><a href="/assets/pages/clients.html">Клиенты</a></li>
+                <li><a href="#">Фотособытия</a></li>
+                <li><a href="/assets/pages/contact.html">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-right-wrapper">
+              <div class="search-wrapper">
+                <form class="search-box" id="openSearch">
+                  <button type="button">
+                    <img src="/assets/images/home/search.svg" alt="image" />
+                  </button>
+                </form>
+              </div>
+
+              <div class="language-wrapper">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="/assets/images/home/ru.png" alt="image" />
+                    Рус
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="/assets/images/home/en.svg" alt="" />
+                        En
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="contact-us-btn-wrapper">
+                <button>Связаться снами</button>
+              </div>
+            </div>
+
+            <button class="mobile-close" aria-label="Close">
+              <img src="/assets/images/home/close.svg" alt="image" />
+            </button>
+          </div>
+
+          <button class="burger-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- SEARCH START -->
+    <div class="search-overlay" id="searchOverlay"></div>
+
+    <!-- Search panel -->
+    <div class="search-panel" id="searchPanel">
+      <h3>Поиск по сайту</h3>
+
+      <form class="search-form">
+        <input type="text" placeholder="Например, IT обслуживание" autofocus />
+        <button type="submit">Начать поиск</button>
+      </form>
+    </div>
+    <!-- SEARCH END -->
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="it-service-wrapper">
+            <div class="it-service-header-wrapper">
+              <h6>Услуги</h6>
+              <h1>Инсталляция и настройка ПО</h1>
+              <p>
+                Команда IT специалистов #connector предлагает услуги по
+                установке (инсталляции) и настройке программного обеспечения для
+                организаций
+              </p>
+              <p class="breadcrumbs">
+                Главная / Услуги / <span>Инсталляция и настройка ПО</span>
+              </p>
+            </div>
+
+            <div class="banner-content-wrapper">
+              <div class="banner-wrapper">
+                <img
+                  src="/assets/images/installation-and-settings/banner.png"
+                  alt="image"
+                />
+              </div>
+
+              <div class="banner-description-wrapper">
+                <p>
+                  Для этих работ у нас есть IT отдел (IT блок) (см. Структура
+                  компании), который выполняет полный спектр работ по установке
+                  и настройке программного обеспечения на серверах, персональных
+                  компьютерах, сетевом оборудовании, системах хранения данных,
+                  видеорегистраторах/видеосерверах и другом IT оборудовании.
+                  <br />
+                  <br />
+                  Мы осуществляем деятельность на IT рынке Узбекистана с 2009
+                  года. За период работы реализованы проекты по установке и
+                  настройке программного обеспечения для почти сотни
+                  организаций, представляющих различные отрасли. В процессе
+                  накоплен значительный профессиональный опыт, что позволяет
+                  выполнять работы по инсталляции и конфигурированию программных
+                  решений на высоком уровне качества.
+                </p>
+              </div>
+
+              <div class="inst-left-right-wrapper">
+                <div class="left-wrapper">
+                  <h3>
+                    Где применяются услуги по инсталляции и <br />
+                    настройке программного обеспечения?
+                  </h3>
+
+                  <ul>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Корпоративные офисы и частные организации</span>
+                        <br />
+                        Установка и настройка программ, необходимых для работы
+                        сотрудников: офисные пакеты, бухгалтерские приложения,
+                        CRM-системы, системы документооборота и пр. Организация
+                        защищённой работы с корпоративной информацией и
+                        настройка коллективного доступа.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Производственные и промышленные предприятия</span>
+                        <br />
+                        Установка специализированного ПО для автоматизации
+                        производственных процессов, управления складами, учёта
+                        материалов, промышленной безопасности.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Государственные учреждения</span> <br />
+                        Настройка лицензионных офисных, специализированных и
+                        защитных программных продуктов в соответствии с
+                        государственными требованиями и стандартами.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Образовательные организации</span> <br />
+                        Развёртывание учебных платформ, антиплагиатных,
+                        лингвистических, технических и других обучающих
+                        программ.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Медицинские учреждения</span> <br />
+                        Инсталляция и настройка специализированных медицинских
+                        информационных систем, лабораторного и диагностического
+                        ПО, систем управления пациентами.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>IT инфраструктуры любого масштаба</span> <br />
+                        Настройка серверных решений, сетевого оборудования,
+                        систем резервного копирования, доменной структуры,
+                        почтовых серверов, систем IT безопасности, приложений
+                        для совместной работы и удаленного доступа.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="right-wrapper">
+                  <h3>
+                    Для чего необходимы <br />
+                    эти работы?
+                  </h3>
+                  <ul>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Быстрый запуск и бесперебойная работа ПО</span>
+                        <br />
+                        Гарантия корректной установки программ с минимальными
+                        рисками конфликтов, ошибок и сбоев. Используем уже
+                        проверенные дистрибутивы ПО. Знаем особенности настроек.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Повышение безопасности</span> <br />
+                        Настройка прав доступа, обновлений, резервного
+                        копирования данных и антивирусной защиты исключает
+                        несанкционированный доступ и атаки, а так же помогает
+                        сохранить данные.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Оптимизация работы сотрудников</span> <br />
+                        Гибкая настройка под задачи конкретного бизнеса
+                        позволяет повысить производительность и упростить
+                        ежедневные рабочие процессы.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Минимизация простоев</span> <br />
+                        Профессиональная инсталляция и первичная настройка
+                        сокращают срок адаптации и устраняют вероятность долгих
+                        неработающих участков системы.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Медицинские учреждения</span> <br />
+                        Инсталляция и настройка специализированных медицинских
+                        информационных систем, лабораторного и диагностического
+                        ПО, систем управления пациентами.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/home/check-circle.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span
+                          >Соответствие законодательным и корпоративным
+                          стандартам</span
+                        >
+                        <br />
+                        Установка легального ПО, настройка платформ в
+                        соответствии с требованиями информационной безопасности
+                        и внутренними регламентами компании.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="inst-extra-wrapper">
+                <p>
+                  Мы осуществляем установку программного обеспечения различных
+                  категорий: лицензионного, бесплатного (Open Source),
+                  условно-бесплатного (Shareware) и демонстрационных версий.
+                  Лицензионные права на устанавливаемое программное обеспечение
+                  обычно предоставляются заказчиком. При необходимости заказчик
+                  может приобрести лицензионное программное обеспечение через
+                  нашу компанию.
+                </p>
+                <div class="extra-banner-wrapper">
+                  <img
+                    src="/assets/images/installation-and-settings/extra-banner.png"
+                    alt="image"
+                  />
+                </div>
+              </div>
+
+              <div class="inst-extra-wrapper-2">
+                <h3>
+                  Настройка программного обеспечения может <br />
+                  потребоваться на следующем оборудовании:
+                </h3>
+                <div class="ins-extra-wrapper-two-content">
+                  <ul>
+                    <li>
+                      <img
+                        src="/assets/images/installation-and-settings/info.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span
+                          >Персональные компьютеры, моноблоки и ноутбуки</span
+                        >
+                        <br />
+                        для установки системного ПО, офисных программ,
+                        прикладного ПО, драйверов, специализированного ПО и
+                        антивирусной защиты.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/installation-and-settings/info.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Серверы </span> <br />
+                        настройка серверных операционных систем, почтовых
+                        серверов, файловых серверов, баз данных, гипервизоров
+                        (виртуализации), интернет-шлюзов, контроллеров домена,
+                        кластеров, IP телефонии, 1С, DLP-систем, PAM-систем,
+                        SIEM-систем, СКУД, Norma, центр администрирования
+                        антивирусным ПО, Zabbix (система мониторинга) и
+                        резервного копирования. Обновление прошивок контроллеров
+                        сервера. Конфигурирование RAID массивов.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/installation-and-settings/info.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Мобильные устройства</span> <br />
+                        (смартфоны, планшеты) – настройка корпоративных
+                        приложений и средств безопасности. Настройка
+                        корпоративной почты. Подключение к корпоративной Wi-Fi
+                        сети. Авторизация подключения пользователей Wi-Fi через
+                        SMS.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/installation-and-settings/info.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Сетевое оборудование</span> <br />
+                        (маршрутизаторы, коммутаторы, сетевые экраны, точки
+                        доступа) – настройка встроенного ПО и сервисов
+                        безопасности. Настройка IP адресации сетей и подсетей.
+                        Настройка портов. Обновление прошивок.
+                      </div>
+                    </li>
+                  </ul>
+                  <!--  -->
+                  <ul>
+                    <li>
+                      <img
+                        src="/assets/images/installation-and-settings/info.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Системы хранения данных</span> <br />
+                        (NAS, SAN, СХД) – установка ПО для управления данными,
+                        резервным копированием, организации доступа.
+                        Конфигурирование RAID массивов. Обновление прошивок.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/installation-and-settings/info.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Видеонаблюдение и системы безопасности</span>
+                        <br />
+                        настройка специализированного программного обеспечения
+                        на регистраторах и видеосерверах. Конфигурирование HDD.
+                        Настройка прав доступа. Настройка камер видеонаблюдения.
+                        Настройка IP адресации сетей и подсетей. Организация
+                        трансляции на вебсайт. Настройка просмотра камер на
+                        смартфонах. Настройка ПО GeoVision. Настройка системы
+                        распознавания автомобильных номеров. Настройка СКУД и
+                        Face ID. Снятие записей событий. Обновление прошивок.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/installation-and-settings/info.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>Рабочие станции</span> <br />
+                        для инженерного, графического, дизайнерского и
+                        аналитического ПО. Системное ПО и драйверы.
+                      </div>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/images/installation-and-settings/info.svg"
+                        alt="image"
+                      />
+                      <div>
+                        <span>МФУ и периферийные устройства</span> <br />
+                        установка драйверов, сканирующего/печатающего ПО и
+                        систем контроля доступа. Настройка печати по сети.
+                        Обновление прошивок.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="inst-extra-wrapper-banner">
+                <img
+                  src="/assets/images/installation-and-settings/banner-2.png"
+                  alt="image"
+                />
+              </div>
+
+              <div class="partner-content inst-partner-content">
+                <div class="partner-content-header">
+                  <p>Сотрудничество</p>
+                  <h6>Процесс сотрудничества</h6>
+                  <h5 class="partner-desc-header">
+                    Для Вашего удобства мы упростили процесс заказа IT <br />
+                    обслуживания
+                  </h5>
+                </div>
+
+                <div class="partner-content-body">
+                  <ul>
+                    <li>
+                      Пришлите запрос или свяжитесь с нашим менеджером по
+                      телефону или Telegram +998 98 365-93-25
+                    </li>
+                    <li>
+                      Получите консультацию каким образом будут выполняться
+                      данные работы. На этом этапе можно определить примерную
+                      стоимость ежемесячной подписки на IT обслуживание.
+                    </li>
+                    <li>
+                      Согласуйте необходимость выезда нашего IT специалиста на
+                      осмотр объекта для точного определения объема работ.
+                    </li>
+                    <li>
+                      Получите коммерческое предложение на работы по
+                      ежемесячному IT обслуживанию.
+                    </li>
+                    <li>
+                      После утверждения коммерческого предложения получите
+                      договор для оплаты в электронном виде в Дидокс.
+                    </li>
+                    <li>Согласуйте необходимость подписания NDA.</li>
+                    <li>
+                      После оплаты наши менеджеры готовы принимать заявки на
+                      выполнение работ. Каждая заявка фиксируется в нашей CRM
+                      системе. В базу данных заносится информация о том кто и
+                      когда дал заявку, описание задачи и описание решения этой
+                      задачи, имя специалиста ответственного за выполнения
+                      заявки. Любая (разумная) заявка берется на контроль и
+                      обязательно будет выполнена.
+                    </li>
+                    <li>
+                      Согласуйте необходимость первичного IT аудита. Для
+                      подробного описания текущей IT инфраструктуры. Данные
+                      работы входят в стоимость ежемесячной абонентской платы
+                      (подписки).
+                    </li>
+                    <li>
+                      Согласуйте необходимость проведения инвентаризации вашего
+                      IT оборудования. Инвентаризация позволит иметь подробный
+                      список техники с характеристиками, что позволит определить
+                      необходимую модернизацию в перспективе. Инвентаризация
+                      обычно проходит в течении первого месяца обслуживания.
+                      Данные работы входят в стоимость ежемесячной абонентской
+                      платы (подписки).
+                    </li>
+                    <li>
+                      Обычно со стороны Заказчика выделяется ответственный
+                      менеджер, который дает заявки нашему менеджеру. Так же
+                      возможно создание группы в Телеграм с добавлением
+                      сотрудников Заказчика и Исполнителя, тогда заявки
+                      принимаются прямо в этой группе.
+                    </li>
+                    <li>
+                      После получения заявки наш менеджер назначает инженера или
+                      IT специалиста для выполнения этой заявки. Сотрудники
+                      нашего IT блока/отдела в течении часа (SLA) начинают
+                      выполнение заявки путем выезда на объект Заказчика или
+                      дистанционно через сеть Интернет. После выполнения заявки,
+                      исполнитель фиксирует выполнение заявки в нашей CRM
+                      системе. В результате формируется база выполненных заявок
+                      по которой Заказчик всегда может затребовать отчет о
+                      проделанной работе за любой период времени.
+                    </li>
+                    <li>
+                      По окончанию каждого месяца обслуживания или 30 дневного
+                      периода обслуживания (если договор был заключен не 1 числа
+                      месяца) подписываются счет-фактура и акт выполненных работ
+                      за этот период IT обслуживания в электронном виде в
+                      Дидокс. Так же Заказчик делает предоплату за следующий
+                      месяц обслуживания.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row m-0 p-0">
+            <div class="col-12 col-md-4 left-bg">
+              <div class="footer-left-wrapper">
+                <div class="logo-wrapper">
+                  <img src="/assets/images/home/logo.png" alt="image" />
+                </div>
+
+                <ul>
+                  <li>
+                    Республика Узбекистан, г. Ташкент, 100011, ул. Навои 16А
+                  </li>
+                  <li>Моб.: +998 (98) 365-93-25</li>
+                  <li>Режим работы: Пн-Пт с 9:00 до 18:00</li>
+                  <li>
+                    Для абонентов действует круглосуточная поддержка по телефону
+                  </li>
+                </ul>
+
+                <div class="phone-wrapper">
+                  <h5>Телефоны для связи:</h5>
+                  <a href="#">Тел/факс: +998 (71) 241-56-50</a>
+                  <a href="#">Моб: +998 (98) 365-93-25</a>
+                </div>
+
+                <div class="social-wrapper">
+                  <a href="#">Facebook</a>
+                  <a href="№">Twitter / X</a>
+                  <a href="№">Instagram</a>
+                  <a href="№">Telegram</a>
+                </div>
+
+                <div class="copyright-wrapper">
+                  <p>
+                    © 2009-2025 #connector. Сайт содержит авторский контент.
+                    Копирование запрещено. Все права защищены.
+                  </p>
+                  <p>
+                    Сайт разработал с любовью
+                    <a href="https://webline.uz/">Webline</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-8 right-bg">
+              <div class="footer-right-wrapper">
+                <h2>Наши услуги</h2>
+
+                <div class="useful-links-wrapper">
+                  <ul>
+                    <li><a href="#">IT обслуживание </a></li>
+                    <li><a href="#">Инсталляция и настройка ПО </a></li>
+                    <li><a href="#">Проектирование IT систем </a></li>
+                    <li><a href="#">Поставка IT товаров </a></li>
+                    <li><a href="#">Поставка лицензионного ПО</a></li>
+                  </ul>
+
+                  <ul>
+                    <li><a href="#">Монтаж IT систем </a></li>
+                    <li><a href="#">Облачные услуги </a></li>
+                    <li><a href="#">Решение нестандартных задач </a></li>
+                    <li><a href="#">Сервисный центр</a></li>
+                  </ul>
+
+                  <ul>
+                    <li><a href="#">Серверы </a></li>
+                    <li><a href="#">Видеонаблюдение </a></li>
+                    <li><a href="#">Контроль доступа </a></li>
+                    <li><a href="#">IT-безопасность </a></li>
+                    <li><a href="#">Лоĸальные сети ЛВС/СКС/ ВОЛС </a></li>
+                    <li><a href="#">Корпоративный Wi-Fi</a></li>
+                  </ul>
+
+                  <ul>
+                    <li><a href="#">IP-Телефония </a></li>
+                    <li><a href="#">Звукоусиление</a></li>
+                    <li><a href="#">ОПС</a></li>
+                    <li><a href="#">Решения для видео презентаций </a></li>
+                    <li><a href="#">Видео ĸонференц-связь (ВКС) </a></li>
+                    <li><a href="#">Аудио конференции</a></li>
+                  </ul>
+                </div>
+
+                <div class="mobile-copyright">
+                  <p>
+                    © 2009-2025 #connector. Сайт содержит авторский контент.
+                    Копирование запрещено. Все права защищены.
+                  </p>
+                  <p>
+                    Сайт разработал с любовью
+                    <a href="https://webline.uz/">Webline</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- FANCYBOX -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- SWIPER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MAIN JS -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
