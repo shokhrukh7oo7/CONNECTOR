@@ -332,6 +332,36 @@
   .inst-extra-wrapper-2 .ins-extra-wrapper-two-content {
     grid-template-columns: 1fr;
   }
+  .it-system-banner-description {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .it-system-banner-description .left-wrapper,
+  .it-system-banner-description .right-wrapper {
+    width: 100%;
+  }
+  .it-system-banner-description .right-wrapper {
+    padding: 24px;
+  }
+  .it-system-banner-description .right-wrapper .icon-wrapper {
+    display: none;
+  }
+  .it-system-left-right-wrapper .left-right-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .it-system-left-right-wrapper .left-right-wrapper .left-wrapper ul {
+    align-items: center;
+  }
+  .it-system-left-right-wrapper .left-right-wrapper .left-wrapper ul li {
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+    .it-system-left-right-wrapper .left-right-wrapper .right-wrapper {
+      width: 100%;
+    }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {

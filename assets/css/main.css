@@ -2965,6 +2965,48 @@ p {
   aspect-ratio: 588 / 392;
   object-fit: cover;
 }
+
+.it-system-extra-wrapper h5 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--black-color);
+  margin-bottom: 24px;
+}
+.it-system-extra-wrapper p {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  width: 100%;
+  max-width: 792px;
+}
+.it-system-extra-wrapper-banner img {
+  border-radius: 32px;
+  height: auto;
+  aspect-ratio: 1200 / 664;
+  object-fit: cover;
+}
+.it-system-extra-wrapper-two {
+  padding: clamp(32px, 5vw, 64px) 0;
+}
+.it-system-extra-wrapper-two h5 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--black-color);
+  margin-bottom: 24px;
+}
+.it-system-extra-wrapper-two p {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  width: 100%;
+  max-width: 792px;
+}
+.it-system-container .directions-wrapper .directions-content-wrapper .item h6 {
+  font-weight: 400;
+  font-size: clamp(16px, 1.3vw, 18px);
+}
 /* IT SYSTEM DESIGN END */
 /* ********************************************************************* */
 /* FOOTERT START */
