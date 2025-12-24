@@ -1206,6 +1206,12 @@ p {
   background-color: var(--item-bg);
   border-radius: 16px;
   padding: 8px;
+  transition: all 0.3s ease;
+}
+.card-section-wrapper .card-item:hover {
+  box-shadow: rgb(38, 57, 77) 0px 0px 20px -10px;
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 .card-section-wrapper .card-item .card-image {
   width: 100%;
