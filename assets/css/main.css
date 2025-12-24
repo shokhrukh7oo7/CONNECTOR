@@ -3130,6 +3130,144 @@ p {
   width: 100%;
   max-width: 445px;
 }
+.product-item-wrapper .product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 0 0 clamp(64px, 10vw, 124px);
+}
+.product-item-wrapper .product-container .item {
+  display: flex;
+  gap: 21px;
+  background-color: var(--item-bg);
+  padding: 8px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.product-item-wrapper .product-container .item:hover {
+  box-shadow: rgb(38, 57, 77) 0px 0px 20px -10px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.product-item-wrapper .product-container .item .left-wrapper img {
+  width: 177px;
+  height: 220px;
+  border-radius: 12px;
+}
+.product-item-wrapper .product-container .item .right-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 13px 0;
+}
+.product-item-wrapper .product-container .item .right-wrapper .item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.product-item-wrapper .product-container .item .right-wrapper h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--black-color);
+  margin-bottom: 0;
+}
+
+.product-item-wrapper .product-container .item .right-wrapper p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--black-color);
+}
+
+.product-item-wrapper .product-container .item .right-wrapper .btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  padding: 5px 10px;
+}
+.product-item-wrapper .product-container .item .right-wrapper .btn-wrapper a {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--black-color);
+  position: relative;
+  overflow: hidden;
+}
+.product-item-wrapper
+  .product-container
+  .item
+  .right-wrapper
+  .btn-wrapper
+  a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.product-item-wrapper
+  .product-container
+  .item
+  .right-wrapper
+  .btn-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-item-wrapper
+  .product-container
+  .item
+  .right-wrapper
+  .btn-wrapper:hover {
+  color: var(--white-color);
+  background-color: var(--light-green);
+  box-shadow: rgba(71, 192, 162, 0.45) 0px 10px 30px,
+    rgba(0, 0, 0, 0.12) 0px 6px 12px;
+}
+
+.product-item-wrapper
+  .product-container
+  .item
+  .right-wrapper
+  .btn-wrapper:hover
+  a {
+  color: var(--white-color);
+}
+
+.product-item-wrapper
+  .product-container
+  .item
+  .right-wrapper
+  .btn-wrapper:hover
+  img {
+  filter: brightness(0) invert(1);
+}
+
+.product-item-wrapper
+  .product-container
+  .item
+  .right-wrapper
+  .btn-wrapper:hover::before {
+  left: 100%;
+}
+
+.product-item-wrapper .product-container .item .right-wrapper .btn-wrapper img {
+  width: 20px;
+}
 /* SUPPLY OF IT GOODS END */
 /* ********************************************************************* */
 /* FOOTERT START */
