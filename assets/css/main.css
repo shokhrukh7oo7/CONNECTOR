@@ -2955,7 +2955,7 @@ p {
 }
 .it-system-left-right-wrapper .left-right-wrapper .left-wrapper ul li {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 12px;
   color: var(--black-color);
   font-weight: 400;
@@ -3300,6 +3300,27 @@ p {
   line-height: 140%;
 }
 /* SUPPLY LISENCE END */
+/* ********************************************************************* */
+/* SERVICE CENTER START */
+.service-center-wrapper ul {
+  gap: 24px;
+}
+.service-center-wrapper .left-right-wrapper .left-wrapper {
+  width: 50%;
+}
+.service-extra-banner {
+  padding: clamp(16px, 2vw, 32px) 0 0;
+}
+.service-extra-banner img {
+  border-radius: 32px;
+  height: auto;
+  aspect-ratio: 1200 / 644;
+  object-fit: cover;
+}
+.service-center-container .direction-container {
+  margin: clamp(32px, 5vw, 64px) 0;
+}
+/* SERVICE CENTER END */
 /* ********************************************************************* */
 /* FOOTERT START */
 .footer-wrapper {
