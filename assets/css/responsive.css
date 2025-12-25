@@ -403,6 +403,18 @@
   .service-center-wrapper .left-right-wrapper .left-wrapper {
     width: 100%;
   }
+
+  .map-container-wrapper {
+    padding: 20px 0;
+    aspect-ratio: auto;
+    text-align: center;
+  }
+  .map-container-wrapper .map-content-wrapper .left-wrapper p {
+    max-width: 100%;
+  }
+  .map-container-wrapper .map-content-wrapper {
+    flex-direction: column;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {

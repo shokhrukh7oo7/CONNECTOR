@@ -3329,6 +3329,140 @@ p {
 .solving-wrapper .it-service-header-wrapper p {
   max-width: 1200px;
 }
+.solving-direction-wrapper .direction-container {
+  margin: clamp(16px, 2vw, 32px) 0 clamp(32px, 5vw, 64px) !important;
+}
+.map-container-wrapper {
+  position: relative;
+  background-color: var(--light-green);
+  height: auto;
+  aspect-ratio: 1200 / 500;
+  border-radius: 24px;
+  margin-bottom: clamp(32px, 5vw, 64px);
+}
+.map-container-wrapper .map-banner {
+  position: absolute;
+  bottom: 14%;
+  right: 12%;
+  object-fit: cover;
+  width: 100%;
+  height: 452px;
+  max-width: 1048.67px;
+}
+.map-container-wrapper .map-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 clamp(20px, 3vw, 40px);
+  position: relative;
+  gap: 30px;
+}
+.map-container-wrapper .map-content-wrapper .left-wrapper {
+  width: 100%;
+  max-width: 639px;
+}
+.map-container-wrapper .map-content-wrapper .left-wrapper h1 {
+  font-size: clamp(28px, 6vw, 64px);
+  font-weight: 700;
+  color: var(--white-color);
+  line-height: 100%;
+  margin-bottom: 16px;
+}
+.map-container-wrapper .map-content-wrapper .left-wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white-color);
+  width: 100%;
+  max-width: 461px;
+  line-height: 100%;
+}
+
+.map-container-wrapper .map-content-wrapper .right-wrapper {
+  background-color: var(--white-color);
+  border-radius: 24px;
+  padding: 24px;
+}
+.map-container-wrapper .map-content-wrapper .right-wrapper h3 {
+  font-weight: 700;
+  font-size: clamp(16px, 1.5vw, 20px);
+  color: var(--black-color);
+  margin-bottom: 5px;
+}
+
+.map-container-wrapper .map-content-wrapper .right-wrapper p {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--grey-color);
+  margin-bottom: 8px;
+}
+
+.map-container-wrapper .map-content-wrapper .right-wrapper .btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 21px;
+}
+
+.map-container-wrapper .map-content-wrapper .right-wrapper .btn-wrapper a {
+  background-color: var(--black-color);
+  border-radius: 52px;
+  padding: 9.5px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white-color);
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-container-wrapper
+  .map-content-wrapper
+  .right-wrapper
+  .btn-wrapper
+  a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map-container-wrapper
+  .map-content-wrapper
+  .right-wrapper
+  .btn-wrapper
+  a:hover {
+  color: var(--white-color);
+  background-color: var(--light-green);
+
+  box-shadow: rgba(71, 192, 162, 0.45) 0px 10px 30px,
+    rgba(0, 0, 0, 0.12) 0px 6px 12px;
+}
+
+.map-container-wrapper
+  .map-content-wrapper
+  .right-wrapper
+  .btn-wrapper
+  a:hover::before {
+  left: 100%;
+}
+
+.right-wrapper .right-contact-wrapper .btn-wrapper a img {
+  width: 16px;
+  height: 16px;
+}
 /* SOLVING IT PROBLEMS END */
 /* ********************************************************************* */
 /* FOOTERT START */
