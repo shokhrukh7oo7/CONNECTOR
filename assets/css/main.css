@@ -3322,6 +3322,15 @@ p {
 }
 /* SERVICE CENTER END */
 /* ********************************************************************* */
+/* SOLVING IT PROBLEMS START */
+.solving-wrapper .it-service-header-wrapper {
+  max-width: 1200px;
+}
+.solving-wrapper .it-service-header-wrapper p {
+  max-width: 1200px;
+}
+/* SOLVING IT PROBLEMS END */
+/* ********************************************************************* */
 /* FOOTERT START */
 .footer-wrapper {
   background: #255050;
