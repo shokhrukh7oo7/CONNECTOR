@@ -3274,6 +3274,33 @@ p {
 }
 /* SUPPLY OF IT GOODS END */
 /* ********************************************************************* */
+/* SUPPLY LISENCE START */
+.supply-lisence-wrpper .additional-section-wrapper {
+  background-color: var(--white-color);
+  padding: 0 0 clamp(16px, 2vw, 32px);
+}
+.supply-lisence-wrpper h2 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+  letter-spacing: 0;
+  width: 100%;
+  max-width: 590px;
+  margin-bottom: clamp(16px, 2vw, 32px);
+}
+.supply-lisence-wrpper .additional-section-wrapper ul {
+  width: 100%;
+  max-width: 690px;
+}
+.supply-lisence-wrpper
+  .additional-section-wrapper
+  .additional-section-content
+  .additional-bottom-wrapper
+  p {
+  font-size: 16px;
+  line-height: 140%;
+}
+/* SUPPLY LISENCE END */
+/* ********************************************************************* */
 /* FOOTERT START */
 .footer-wrapper {
   background: #255050;

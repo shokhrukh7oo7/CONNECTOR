@@ -386,6 +386,13 @@
   .product-item-wrapper .product-container {
     grid-template-columns: 1fr;
   }
+  .supply-lisence-wrpper h2 {
+    margin: 0 auto clamp(16px, 2vw, 32px);
+    text-align: center;
+  }
+  .supply-lisence-wrpper .additional-section-wrapper ul {
+    max-width: 100%;
+  }
 }
 /* Breakpoint 768px */
 @media (max-width: 768px) {
