@@ -3463,6 +3463,22 @@ p {
   width: 16px;
   height: 16px;
 }
+.solving-partner {
+  padding: 0 0 clamp(64px, 8vw, 84px);
+}
+
+.solving-partner .swiper-container-solving-partner {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.solving-partner .swiper-container-solving-partner .swiper-slide img {
+  width: 100%;
+}
 /* SOLVING IT PROBLEMS END */
 /* ********************************************************************* */
 /* FOOTERT START */

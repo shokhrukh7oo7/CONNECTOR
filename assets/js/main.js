@@ -109,6 +109,42 @@ $(document).ready(function () {
 });
 
 // ================================================
+$(document).ready(function () {
+  // Swiper: Slider
+  new Swiper(".swiper-container-solving-partner", {
+    loop: true,
+    slidesPerView: 10,
+    nextButton: ".swiper-button-next",
+    prevButton: ".swiper-button-prev",
+    autoplay: 3000, // ⏱ 4 секунды
+    autoplayDisableOnInteraction: false, // не останавливается после клика
+    paginationClickable: true,
+    spaceBetween: 20,
+    breakpoints: {
+      1920: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+      },
+      1028: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      395: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+    },
+  });
+});
+// ================================================
 document.addEventListener("DOMContentLoaded", () => {
   const counter = document.querySelector(".counter");
   if (!counter) return;
