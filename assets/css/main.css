@@ -3479,6 +3479,9 @@ p {
 .solving-partner .swiper-container-solving-partner .swiper-slide img {
   width: 100%;
 }
+.typical-card-container .card-section-wrapper {
+  margin: 0 0 34px;
+}
 /* SOLVING IT PROBLEMS END */
 /* ********************************************************************* */
 /* FOOTERT START */
