@@ -2399,14 +2399,14 @@ p {
   .contact-body-wrapper
   .address-location-wrapper
   .yandex-map-wrapper {
-  width: 50%;
+  width: 100%;
 }
-.contact-wrapper
+/* .contact-wrapper
   .contact-body-wrapper
   .address-location-wrapper
   .google-map-wrapper {
   width: 50%;
-}
+} */
 .contact-wrapper .contact-body-wrapper .address-location-wrapper iframe {
   width: 100%;
   border-radius: 32px;
